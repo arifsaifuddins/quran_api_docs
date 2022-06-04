@@ -40,7 +40,9 @@ function InputField() {
       let Qiraah = []
       document.querySelectorAll('.Qiraah-Bazzi')
         .forEach(data => {
-          Qiraah.push(data.value)
+          if (data.value != '') {
+            Qiraah.push(data.value)
+          }
         })
       setBazzi(Qiraah)
     } else {
@@ -51,7 +53,9 @@ function InputField() {
       let Qiraah = []
       document.querySelectorAll('.Qiraah-Hisham')
         .forEach(data => {
-          Qiraah.push(data.value)
+          if (data.value != '') {
+            Qiraah.push(data.value)
+          }
         })
       setHisham(Qiraah)
     } else {
@@ -62,7 +66,9 @@ function InputField() {
       let Qiraah = []
       document.querySelectorAll('.Qiraah-Hafs')
         .forEach(data => {
-          Qiraah.push(data.value)
+          if (data.value != '') {
+            Qiraah.push(data.value)
+          }
         })
       setHafs(Qiraah)
     } else {
@@ -73,7 +79,9 @@ function InputField() {
       let Qiraah = []
       document.querySelectorAll('.Qiraah-Susi')
         .forEach(data => {
-          Qiraah.push(data.value)
+          if (data.value != '') {
+            Qiraah.push(data.value)
+          }
         })
       setSusi(Qiraah)
     } else {
@@ -84,7 +92,9 @@ function InputField() {
       let Qiraah = []
       document.querySelectorAll('.Qiraah-Khalaf')
         .forEach(data => {
-          Qiraah.push(data.value)
+          if (data.value != '') {
+            Qiraah.push(data.value)
+          }
         })
       setKhalaf(Qiraah)
     } else {
@@ -95,7 +105,9 @@ function InputField() {
       let Qiraah = []
       document.querySelectorAll('.Qiraah-Warsh')
         .forEach(data => {
-          Qiraah.push(data.value)
+          if (data.value != '') {
+            Qiraah.push(data.value)
+          }
         })
       setWarsh(Qiraah)
     } else {
@@ -106,7 +118,9 @@ function InputField() {
       let Qiraah = []
       document.querySelectorAll('.Qiraah-Laith')
         .forEach(data => {
-          Qiraah.push(data.value)
+          if (data.value != '') {
+            Qiraah.push(data.value)
+          }
         })
       setLaith(Qiraah)
     } else {
@@ -117,7 +131,9 @@ function InputField() {
       let Qiraah = []
       document.querySelectorAll('.Qiraah-Qunbul')
         .forEach(data => {
-          Qiraah.push(data.value)
+          if (data.value != '') {
+            Qiraah.push(data.value)
+          }
         })
       setQunbul(Qiraah)
     } else {
@@ -128,7 +144,9 @@ function InputField() {
       let Qiraah = []
       document.querySelectorAll('.Qiraah-IbnDzakwan')
         .forEach(data => {
-          Qiraah.push(data.value)
+          if (data.value != '') {
+            Qiraah.push(data.value)
+          }
         })
       setIbnDzakwan(Qiraah)
     } else {
@@ -139,7 +157,9 @@ function InputField() {
       let Qiraah = []
       document.querySelectorAll('.Qiraah-Shubah')
         .forEach(data => {
-          Qiraah.push(data.value)
+          if (data.value != '') {
+            Qiraah.push(data.value)
+          }
         })
       setShubah(Qiraah)
     } else {
@@ -150,7 +170,9 @@ function InputField() {
       let Qiraah = []
       document.querySelectorAll('.Qiraah-DuriAbuAmr')
         .forEach(data => {
-          Qiraah.push(data.value)
+          if (data.value != '') {
+            Qiraah.push(data.value)
+          }
         })
       setDuriAbuAmr(Qiraah)
     } else {
@@ -161,7 +183,9 @@ function InputField() {
       let Qiraah = []
       document.querySelectorAll('.Qiraah-Khallad')
         .forEach(data => {
-          Qiraah.push(data.value)
+          if (data.value != '') {
+            Qiraah.push(data.value)
+          }
         })
       setKhallad(Qiraah)
     } else {
@@ -172,7 +196,9 @@ function InputField() {
       let Qiraah = []
       document.querySelectorAll('.Qiraah-Qolun')
         .forEach(data => {
-          Qiraah.push(data.value)
+          if (data.value != '') {
+            Qiraah.push(data.value)
+          }
         })
       setQolun(Qiraah)
     } else {
@@ -183,7 +209,9 @@ function InputField() {
       let Qiraah = []
       document.querySelectorAll('.Qiraah-DuriKisai')
         .forEach(data => {
-          Qiraah.push(data.value)
+          if (data.value != '') {
+            Qiraah.push(data.value)
+          }
         })
       setDuriKisai(Qiraah)
     } else {
