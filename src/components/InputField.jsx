@@ -26,6 +26,7 @@ function InputField() {
   const [DuriKisai, setDuriKisai] = useState([])
 
   useEffect(() => {
+
     if (document.querySelector('.ayah').value != '' && document.querySelector('.surah').value != '') {
       setCommited(true)
     } else {
@@ -343,12 +344,23 @@ function InputField() {
 
   const addInput = (a) => {
 
+    const div = document.createElement('div')
     const input = document.createElement('input')
+    const close = document.createElement('div')
+
+    close.className = 'absolute top-2 right-2 cursor-pointer hover:text-[#cf6679] text-[#cf4444] font-bold text-4xl'
+    close.onclick = e => e.target.parentElement.remove()
+
+    div.className = 'relative'
+
     input.type = 'text'
     input.placeholder = `Qiraah of ${a}...`
-    input.className = `mt-2 bg-transparent text-white py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400 Qiraah-${a}`
+    input.className = `mt-2 bg-transparent text-white py-2 px-3 w-[100%] rounded-lg text-lg  border outline-none border-slate-400 Qiraah-${a}`
 
-    document.querySelector(`.${a}`).append(input)
+    close.innerHTML = '&times;'
+    div.append(input)
+    div.append(close)
+    document.querySelector(`.${a}`).append(div)
   }
 
   return (
