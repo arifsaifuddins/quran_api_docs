@@ -352,11 +352,11 @@ function InputField() {
   }
 
   return (
-    <div className="flex flex-col mx-auto mb-16 w-[700px]">
+    <div className="flex flex-col mx-auto mb-56 w-[700px]">
       {
         (Errored == true) && <div className="text-xl bg-slate-500 py-2 px-3 font-bold mb-4 rounded-lg text-white flex justify-between items-center">
           <div>{Error}</div>
-          <button onClick={() => setErrored(false)} className="text-slate-600 hover:text-red-700 text-2xl font-bold">&times;</button>
+          <button onClick={() => setErrored(false)} className="text-black hover:text-[#cf4444] text-2xl font-bold">&times;</button>
         </div>
       }
       <div className="flex justify-between items-center">
@@ -366,16 +366,17 @@ function InputField() {
         </div>
         <div className="flex">
           {
-            (Commited == false) ? <button onClick={() => Commit()} disabled className="cursor-not-allowed bg-yellow-700 font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button> : <button onClick={() => Commit()} className=" bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button>
+            (Commited == false) ? <button onClick={() => Commit()} disabled className="cursor-not-allowed text-slate-500 bg-[#bb86fc] font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button> : <button onClick={() => Commit()} className=" bg-[#9242f3] hover:bg-[#bb86fc] text-white font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button>
           }
           {
-            (Sable == true) ? <button disabled onClick={() => addAyah()} className="bg-green-700 cursor-not-allowed font-bold py-2 px-5 rounded-lg text-lg" >Add</button> : <button onClick={() => addAyah()} className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-5 rounded-lg text-lg" >Add</button>
+            (Sable == true) ? <button disabled onClick={() => addAyah()} className="bg-[#3c217c] cursor-not-allowed font-bold py-2 px-5 rounded-lg text-lg" >Add</button> : <button onClick={() => addAyah()} className=" bg-[#3700b3] hover:bg-[#3c217c] text-white font-bold py-2 px-5 rounded-lg text-lg" >Add</button>
           }
           {
-            (Sable == true) ? <button disabled onClick={() => updateAyah()} className="bg-green-700 cursor-not-allowed font-bold py-2 px-5 rounded-lg text-lg ml-2" >Update</button> : <button onClick={() => updateAyah()} className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-5 rounded-lg text-lg ml-2" >Update</button>
+            (Sable == true) ? <button disabled onClick={() => updateAyah()} className="bg-[#289389] cursor-not-allowed font-bold py-2 px-5 rounded-lg text-lg ml-2" >Update</button> : <button onClick={() => updateAyah()} className=" bg-[#03dac6] hover:bg-[#289389] text-white font-bold py-2 px-5 rounded-lg text-lg ml-2" >Update</button>
           }
           {
-            (Commited == false) ? <button onClick={() => deleteAyah()} disabled className="cursor-not-allowed bg-red-700 font-bold py-2 px-3 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button> : <button onClick={() => deleteAyah()} className=" bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-3 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button>
+            (Commited == false) ? <button onClick={() => deleteAyah()} disabled className="cursor-not-allowed bg-[#cf6679]
+            font-bold py-2 px-3 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button> : <button onClick={() => deleteAyah()} className=" hover:bg-[#cf6679] bg-[#cf4444] text-white font-bold py-2 px-3 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button>
           }
         </div>
       </div>
@@ -388,7 +389,7 @@ function InputField() {
                 <div className={`flex flex-col w-[100%] ${qura}`} key={i}>
                   <div className="flex justify-between text-white text-xl font-bold mt-3 border-b pb-3">
                     <label >{`Imam ${qura} :`}</label>
-                    <button onClick={() => addInput(qura)} className="rounded-lg font-bold hover:bg-red-700 bg-red-500 w-12 text-center">+</button>
+                    <button onClick={() => addInput(qura)} className="rounded-lg font-bold hover:bg-[#cf6679] bg-[#cf6679] w-12 text-center">+</button>
                   </div>
                 </div>
               )
@@ -402,7 +403,7 @@ function InputField() {
                 <div className={`flex flex-col w-[100%] ${qura}`} key={i}>
                   <div className="flex justify-between text-white text-xl font-bold mt-3 border-b pb-3">
                     <label >{`Imam ${qura} :`}</label>
-                    <button onClick={() => addInput(qura)} className="rounded-lg font-bold hover:bg-red-700 bg-red-500 w-12 text-center">+</button>
+                    <button onClick={() => addInput(qura)} className="rounded-lg font-bold hover:bg-[#cf6679] bg-[#cf4444] w-12 text-center">+</button>
                   </div>
                 </div>
               )
