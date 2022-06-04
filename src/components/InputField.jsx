@@ -376,7 +376,7 @@ function InputField() {
     const input = document.createElement('input')
     const close = document.createElement('div')
 
-    close.className = 'absolute top-2 right-2 cursor-pointer hover:text-[#cf6679] text-[#cf4444] font-bold text-4xl'
+    close.className = 'absolute top-2 bottom-3 right-2 cursor-pointer hover:text-[#cf6679] text-[#cf4444] font-bold text-4xl'
     close.onclick = e => e.target.parentElement.remove()
 
     div.className = 'relative'
