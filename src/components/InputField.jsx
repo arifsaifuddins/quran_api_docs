@@ -355,7 +355,7 @@ function InputField() {
 
     input.type = 'text'
     input.placeholder = `Qiraah of ${a}...`
-    input.className = `mt-2 bg-transparent text-white py-2 px-3 w-[100%] rounded-lg text-lg  border outline-none border-slate-400 Qiraah-${a}`
+    input.className = `mt-2 bg-transparent text-white py-2 pl-3 pr-9 w-[100%] rounded-lg text-lg  border outline-none border-slate-400 Qiraah-${a}`
 
     close.innerHTML = '&times;'
     div.append(input)
@@ -401,7 +401,7 @@ function InputField() {
                 <div className={`flex flex-col w-[100%] ${qura}`} key={i}>
                   <div className="flex justify-between text-white text-xl font-bold mt-3 border-b pb-3">
                     <label >{`Imam ${qura} :`}</label>
-                    <button onClick={() => addInput(qura)} className="rounded-lg font-bold hover:bg-[#cf6679] bg-[#cf6679] w-12 text-center">+</button>
+                    <button onClick={() => addInput(qura)} className="rounded-lg font-bold hover:bg-[#cf6679] bg-[#cf4444] w-12 text-center">+</button>
                   </div>
                 </div>
               )
