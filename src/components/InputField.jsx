@@ -366,7 +366,7 @@ function InputField() {
         </div>
         <div className="flex">
           {
-            (Commited == false) ? <button onClick={() => Commit()} disabled className="cursor-not-allowed bg-blue-700 font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button> : <button onClick={() => Commit()} className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button>
+            (Commited == false) ? <button onClick={() => Commit()} disabled className="cursor-not-allowed bg-yellow-700 font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button> : <button onClick={() => Commit()} className=" bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button>
           }
           {
             (Sable == true) ? <button disabled onClick={() => addAyah()} className="bg-green-700 cursor-not-allowed font-bold py-2 px-5 rounded-lg text-lg" >Add</button> : <button onClick={() => addAyah()} className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-5 rounded-lg text-lg" >Add</button>
