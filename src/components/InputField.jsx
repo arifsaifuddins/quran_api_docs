@@ -312,8 +312,6 @@ function InputField() {
 
   const deleteAyah = async () => {
 
-    setSable(true)
-
     await fetch(`http://localhost:3300/api/quran_rewayah/ayah/${Ayah}?surah=${Surah}`, {
       method: 'DELETE',
     })
@@ -363,12 +361,12 @@ function InputField() {
       }
       <div className="flex justify-between items-center">
         <div className="flex">
-          <input type="number" max="286" min="1" autoFocus placeholder="No of Ayah" className="mr-2 ayah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setAyah(e.target.value)} />
-          <input type="number" max="144" min="1" placeholder="No of Surah" className="surah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setSurah(e.target.value)} />
+          <input type="number" required max="286" min="1" autoFocus placeholder="No of Ayah" className="mr-2 ayah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setAyah(e.target.value)} />
+          <input type="number" required max="144" min="1" placeholder="No of Surah" className="surah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setSurah(e.target.value)} />
         </div>
         <div className="flex">
           {
-            (Commited == false) ? <button onClick={() => Commit()} disabled className=" bg-blue-700 font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button> : <button onClick={() => Commit()} className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button>
+            (Commited == false) ? <button onClick={() => Commit()} disabled className="cursor-not-allowed bg-blue-700 font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button> : <button onClick={() => Commit()} className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button>
           }
           {
             (Sable == true) ? <button disabled onClick={() => addAyah()} className="bg-green-700 cursor-not-allowed font-bold py-2 px-5 rounded-lg text-lg" >Add</button> : <button onClick={() => addAyah()} className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-5 rounded-lg text-lg" >Add</button>
@@ -377,7 +375,7 @@ function InputField() {
             (Sable == true) ? <button disabled onClick={() => updateAyah()} className="bg-green-700 cursor-not-allowed font-bold py-2 px-5 rounded-lg text-lg ml-2" >Update</button> : <button onClick={() => updateAyah()} className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-5 rounded-lg text-lg ml-2" >Update</button>
           }
           {
-            (Commited == false) ? <button onClick={() => deleteAyah()} disabled className=" bg-red-700 font-bold py-2 px-3 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button> : <button onClick={() => deleteAyah()} className=" bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-3 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button>
+            (Commited == false) ? <button onClick={() => deleteAyah()} disabled className="cursor-not-allowed bg-red-700 font-bold py-2 px-3 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button> : <button onClick={() => deleteAyah()} className=" bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-3 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button>
           }
         </div>
       </div>
