@@ -320,11 +320,13 @@ function InputField() {
       ]
   }
 
+  const api = 'https://quran-rewayah-api.vercel.app/api/quran-rewayah'
+
   const updateAyah = async () => {
 
     setSable(true)
 
-    await fetch(`https://quran-rewayah-api.vercel.app/api/quran-rewayah/ayah/${Ayah}?surah=${Surah}`, {
+    await fetch(`${api}/ayah/${Ayah}?surah=${Surah}`, {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
@@ -341,7 +343,7 @@ function InputField() {
 
   const deleteAyah = async () => {
 
-    await fetch(`https://quran-rewayah-api.vercel.app/api/quran-rewayah/ayah/${Ayah}?surah=${Surah}`, {
+    await fetch(`${api}/ayah/${Ayah}?surah=${Surah}`, {
       method: 'DELETE',
     })
       .then(r => r.json())
@@ -355,7 +357,7 @@ function InputField() {
 
     setSable(true)
 
-    await fetch(`https://quran-rewayah-api.vercel.app/api/quran-rewayah/ayah/${Ayah}?surah=${Surah}`, {
+    await fetch(`${api}/ayah/${Ayah}?surah=${Surah}`, {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
