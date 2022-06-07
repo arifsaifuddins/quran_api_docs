@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import quraa from './quraa.json'
 
-function InputField() {
+const InputField = () => {
 
   const [Sable, setSable] = useState(true)
   const [Commited, setCommited] = useState(false)
@@ -45,7 +45,7 @@ function InputField() {
           }
         })
       setBazzi(Qiraah)
-    } 
+    }
 
     if (document.querySelector('.Qiraah-Hisham')) {
       let Qiraah = []
@@ -56,7 +56,7 @@ function InputField() {
           }
         })
       setHisham(Qiraah)
-    } 
+    }
 
     if (document.querySelector('.Qiraah-Hafs')) {
       let Qiraah = []
@@ -67,7 +67,7 @@ function InputField() {
           }
         })
       setHafs(Qiraah)
-    } 
+    }
 
     if (document.querySelector('.Qiraah-Susi')) {
       let Qiraah = []
@@ -78,7 +78,7 @@ function InputField() {
           }
         })
       setSusi(Qiraah)
-    } 
+    }
 
     if (document.querySelector('.Qiraah-Khalaf')) {
       let Qiraah = []
@@ -89,7 +89,7 @@ function InputField() {
           }
         })
       setKhalaf(Qiraah)
-    } 
+    }
 
     if (document.querySelector('.Qiraah-Warsh')) {
       let Qiraah = []
@@ -122,7 +122,7 @@ function InputField() {
           }
         })
       setQunbul(Qiraah)
-    } 
+    }
 
     if (document.querySelector('.Qiraah-IbnDzakwan')) {
       let Qiraah = []
@@ -133,7 +133,7 @@ function InputField() {
           }
         })
       setIbnDzakwan(Qiraah)
-    } 
+    }
 
     if (document.querySelector('.Qiraah-Shubah')) {
       let Qiraah = []
@@ -144,7 +144,7 @@ function InputField() {
           }
         })
       setShubah(Qiraah)
-    } 
+    }
 
     if (document.querySelector('.Qiraah-DuriAbuAmr')) {
       let Qiraah = []
@@ -155,7 +155,7 @@ function InputField() {
           }
         })
       setDuriAbuAmr(Qiraah)
-    } 
+    }
 
     if (document.querySelector('.Qiraah-Khallad')) {
       let Qiraah = []
@@ -166,7 +166,7 @@ function InputField() {
           }
         })
       setKhallad(Qiraah)
-    } 
+    }
 
     if (document.querySelector('.Qiraah-Qolun')) {
       let Qiraah = []
@@ -177,7 +177,7 @@ function InputField() {
           }
         })
       setQolun(Qiraah)
-    } 
+    }
 
     if (document.querySelector('.Qiraah-DuriKisai')) {
       let Qiraah = []
@@ -188,7 +188,7 @@ function InputField() {
           }
         })
       setDuriKisai(Qiraah)
-    } 
+    }
 
     setSable(false)
     setError('Data Commited!')
@@ -348,20 +348,20 @@ function InputField() {
 
     const div = document.createElement('div')
     const input = document.createElement('input')
-    const close = document.createElement('div')
+    const close = document.createElement('p')
 
-    close.className = 'absolute top-2 bottom-3 right-2 cursor-pointer hover:text-[#cf6679] text-[#cf4444] font-bold text-4xl'
+    close.innerHTML = '&times;'
+    close.className = 'absolute right-3 top-3 cursor-pointer hover:text-[#cf6679] text-[#cf4444] font-bold text-3xl'
     close.onclick = e => e.target.parentElement.remove()
-
-    div.className = 'relative'
 
     input.type = 'text'
     input.placeholder = `Qiraah of ${a}...`
     input.className = `mt-2 bg-transparent text-white py-2 pl-3 pr-9 w-[100%] rounded-lg text-lg  border outline-none border-slate-400 Qiraah-${a}`
 
-    close.innerHTML = '&times;'
     div.append(input)
     div.append(close)
+    div.className = 'relative'
+
     document.querySelector(`.${a}`).append(div)
   }
 
