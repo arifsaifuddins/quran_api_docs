@@ -383,14 +383,14 @@ const InputField = () => {
             (Commited == false) ? <button onClick={() => Commit()} disabled className="cursor-not-allowed text-slate-500 bg-[#bb86fc] font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button> : <button onClick={() => Commit()} className=" bg-[#9242f3] hover:bg-[#bb86fc] text-white font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button>
           }
           {
-            (Sable == true) ? <button disabled onClick={() => addAyah()} className="bg-[#3c217c] cursor-not-allowed font-bold py-2 px-5 rounded-lg text-lg" >Add</button> : <button onClick={() => addAyah()} className=" bg-[#3700b3] hover:bg-[#3c217c] text-white font-bold py-2 px-5 rounded-lg text-lg" >Add</button>
+            (Sable == true) ? <button disabled onClick={() => addAyah()} className="bg-[#3c217c] cursor-not-allowed font-bold py-2 px-4 rounded-lg text-lg" >Add</button> : <button onClick={() => addAyah()} className=" bg-[#3700b3] hover:bg-[#3c217c] text-white font-bold py-2 px-4 rounded-lg text-lg" >Add</button>
           }
           {
-            (Sable == true) ? <button disabled onClick={() => updateAyah()} className="bg-[#289389] cursor-not-allowed font-bold py-2 px-5 rounded-lg text-lg ml-2" >Update</button> : <button onClick={() => updateAyah()} className=" bg-[#03dac6] hover:bg-[#289389] text-white font-bold py-2 px-5 rounded-lg text-lg ml-2" >Update</button>
+            (Sable == true) ? <button disabled onClick={() => updateAyah()} className="bg-[#289389] cursor-not-allowed font-bold py-2 px-4 rounded-lg text-lg ml-2" >Update</button> : <button onClick={() => updateAyah()} className=" bg-[#03dac6] hover:bg-[#289389] text-white font-bold py-2 px-4 rounded-lg text-lg ml-2" >Update</button>
           }
           {
             (Commited == false) ? <button onClick={() => deleteAyah()} disabled className="cursor-not-allowed bg-[#cf6679]
-            font-bold py-2 px-3 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button> : <button onClick={() => deleteAyah()} className=" hover:bg-[#cf6679] bg-[#cf4444] text-white font-bold py-2 px-3 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button>
+            font-bold py-2 px-4 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button> : <button onClick={() => deleteAyah()} className=" hover:bg-[#cf6679] bg-[#cf4444] text-white font-bold py-2 px-4 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button>
           }
         </div>
       </div>
@@ -403,7 +403,7 @@ const InputField = () => {
                 <div className={`flex flex-col w-[100%] ${qari}`} key={i}>
                   <div className="flex justify-between text-white text-xl font-bold mt-3 border-b pb-3">
                     <label >{`Imam ${qari} :`}</label>
-                    <button onClick={() => addInput(qari)} className="rounded-lg font-bold hover:bg-[#cf6679] bg-[#cf4444] w-12 text-center">+</button>
+                    <button onClick={() => addInput(qari)} className="rounded-full font-bold hover:bg-[#cf6679] bg-[#cf4444] w-12 text-center">+</button>
                   </div>
                 </div>
               )
@@ -417,7 +417,7 @@ const InputField = () => {
                 <div className={`flex flex-col w-[100%] ${qari}`} key={i}>
                   <div className="flex justify-between text-white text-xl font-bold mt-3 border-b pb-3">
                     <label >{`Imam ${qari} :`}</label>
-                    <button onClick={() => addInput(qari)} className="rounded-lg font-bold hover:bg-[#cf6679] bg-[#cf4444] w-12 text-center">+</button>
+                    <button onClick={() => addInput(qari)} className="rounded-full font-bold hover:bg-[#cf6679] bg-[#cf4444] w-12 text-center">+</button>
                   </div>
                 </div>
               )
