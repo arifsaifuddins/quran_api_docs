@@ -45,9 +45,7 @@ function InputField() {
           }
         })
       setBazzi(Qiraah)
-    } else {
-      setBazzi([])
-    }
+    } 
 
     if (document.querySelector('.Qiraah-Hisham')) {
       let Qiraah = []
@@ -58,9 +56,7 @@ function InputField() {
           }
         })
       setHisham(Qiraah)
-    } else {
-      setHisham([])
-    }
+    } 
 
     if (document.querySelector('.Qiraah-Hafs')) {
       let Qiraah = []
@@ -71,9 +67,7 @@ function InputField() {
           }
         })
       setHafs(Qiraah)
-    } else {
-      setHafs([])
-    }
+    } 
 
     if (document.querySelector('.Qiraah-Susi')) {
       let Qiraah = []
@@ -84,9 +78,7 @@ function InputField() {
           }
         })
       setSusi(Qiraah)
-    } else {
-      setSusi([])
-    }
+    } 
 
     if (document.querySelector('.Qiraah-Khalaf')) {
       let Qiraah = []
@@ -97,9 +89,7 @@ function InputField() {
           }
         })
       setKhalaf(Qiraah)
-    } else {
-      setKhalaf([])
-    }
+    } 
 
     if (document.querySelector('.Qiraah-Warsh')) {
       let Qiraah = []
@@ -110,8 +100,6 @@ function InputField() {
           }
         })
       setWarsh(Qiraah)
-    } else {
-      setWarsh([])
     }
 
     if (document.querySelector('.Qiraah-Laith')) {
@@ -123,8 +111,6 @@ function InputField() {
           }
         })
       setLaith(Qiraah)
-    } else {
-      setLaith([])
     }
 
     if (document.querySelector('.Qiraah-Qunbul')) {
@@ -136,9 +122,7 @@ function InputField() {
           }
         })
       setQunbul(Qiraah)
-    } else {
-      setQunbul([])
-    }
+    } 
 
     if (document.querySelector('.Qiraah-IbnDzakwan')) {
       let Qiraah = []
@@ -149,9 +133,7 @@ function InputField() {
           }
         })
       setIbnDzakwan(Qiraah)
-    } else {
-      setIbnDzakwan([])
-    }
+    } 
 
     if (document.querySelector('.Qiraah-Shubah')) {
       let Qiraah = []
@@ -162,9 +144,7 @@ function InputField() {
           }
         })
       setShubah(Qiraah)
-    } else {
-      setShubah([])
-    }
+    } 
 
     if (document.querySelector('.Qiraah-DuriAbuAmr')) {
       let Qiraah = []
@@ -175,9 +155,7 @@ function InputField() {
           }
         })
       setDuriAbuAmr(Qiraah)
-    } else {
-      setDuriAbuAmr([])
-    }
+    } 
 
     if (document.querySelector('.Qiraah-Khallad')) {
       let Qiraah = []
@@ -188,9 +166,7 @@ function InputField() {
           }
         })
       setKhallad(Qiraah)
-    } else {
-      setKhallad([])
-    }
+    } 
 
     if (document.querySelector('.Qiraah-Qolun')) {
       let Qiraah = []
@@ -201,9 +177,7 @@ function InputField() {
           }
         })
       setQolun(Qiraah)
-    } else {
-      setQolun([])
-    }
+    } 
 
     if (document.querySelector('.Qiraah-DuriKisai')) {
       let Qiraah = []
@@ -214,9 +188,7 @@ function InputField() {
           }
         })
       setDuriKisai(Qiraah)
-    } else {
-      setDuriKisai([])
-    }
+    } 
 
     setSable(false)
     setError('Data Commited!')
@@ -403,8 +375,8 @@ function InputField() {
       }
       <div className="flex justify-between items-center">
         <div className="flex">
-          <input type="number" required max="286" min="1" autoFocus placeholder="No of Ayah" className="mr-2 ayah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setAyah(e.target.value)} />
-          <input type="number" required max="144" min="1" placeholder="No of Surah" className="surah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setSurah(e.target.value)} />
+          <input type="numeric" required autoFocus placeholder="No of Ayah" className="mr-2 ayah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setAyah(e.target.value)} />
+          <input type="numeric" required placeholder="No of Surah" className="surah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setSurah(e.target.value)} />
         </div>
         <div className="flex">
           {
@@ -426,12 +398,12 @@ function InputField() {
       <div className="flex justify-between">
         <div className="flex flex-col w-80">
           {
-            quraa[0].map((qura, i) => {
+            quraa[0].map((qari, i) => {
               return (
-                <div className={`flex flex-col w-[100%] ${qura}`} key={i}>
+                <div className={`flex flex-col w-[100%] ${qari}`} key={i}>
                   <div className="flex justify-between text-white text-xl font-bold mt-3 border-b pb-3">
-                    <label >{`Imam ${qura} :`}</label>
-                    <button onClick={() => addInput(qura)} className="rounded-lg font-bold hover:bg-[#cf6679] bg-[#cf4444] w-12 text-center">+</button>
+                    <label >{`Imam ${qari} :`}</label>
+                    <button onClick={() => addInput(qari)} className="rounded-lg font-bold hover:bg-[#cf6679] bg-[#cf4444] w-12 text-center">+</button>
                   </div>
                 </div>
               )
@@ -440,12 +412,12 @@ function InputField() {
         </div>
         <div className="flex flex-col w-80">
           {
-            quraa[1].map((qura, i) => {
+            quraa[1].map((qari, i) => {
               return (
-                <div className={`flex flex-col w-[100%] ${qura}`} key={i}>
+                <div className={`flex flex-col w-[100%] ${qari}`} key={i}>
                   <div className="flex justify-between text-white text-xl font-bold mt-3 border-b pb-3">
-                    <label >{`Imam ${qura} :`}</label>
-                    <button onClick={() => addInput(qura)} className="rounded-lg font-bold hover:bg-[#cf6679] bg-[#cf4444] w-12 text-center">+</button>
+                    <label >{`Imam ${qari} :`}</label>
+                    <button onClick={() => addInput(qari)} className="rounded-lg font-bold hover:bg-[#cf6679] bg-[#cf4444] w-12 text-center">+</button>
                   </div>
                 </div>
               )
