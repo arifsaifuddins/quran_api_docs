@@ -294,6 +294,25 @@ const InputField = () => {
 
   const api = 'https://quran-rewayah-api.vercel.app/api/quran-rewayah'
 
+  const addAyah = async () => {
+
+    setSable(true)
+
+    await fetch(`${api}/ayah/${Ayah}?surah=${Surah}`, {
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      method: 'POST',
+      body: JSON.stringify(rewayah)
+    })
+      .then(r => r.json())
+      .then(j => {
+        setError(j.message)
+        setErrored(true)
+      })
+  }
+
   const updateAyah = async () => {
 
     setSable(true)
@@ -317,25 +336,6 @@ const InputField = () => {
 
     await fetch(`${api}/ayah/${Ayah}?surah=${Surah}`, {
       method: 'DELETE',
-    })
-      .then(r => r.json())
-      .then(j => {
-        setError(j.message)
-        setErrored(true)
-      })
-  }
-
-  const addAyah = async () => {
-
-    setSable(true)
-
-    await fetch(`${api}/ayah/${Ayah}?surah=${Surah}`, {
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      method: 'POST',
-      body: JSON.stringify(rewayah)
     })
       .then(r => r.json())
       .then(j => {
@@ -380,16 +380,16 @@ const InputField = () => {
         </div>
         <div className="flex">
           {
-            (Commited == false) ? <button onClick={() => Commit()} disabled className="cursor-not-allowed text-slate-500 bg-[#bb86fc] font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button> : <button onClick={() => Commit()} className=" bg-[#9242f3] hover:bg-[#bb86fc] text-white font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button>
+            (Commited == false) ? <button disabled className="cursor-not-allowed text-slate-500 bg-[#bb86fc] font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button> : <button onClick={() => Commit()} className=" bg-[#9242f3] hover:bg-[#bb86fc] text-white font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button>
           }
           {
-            (Sable == true) ? <button disabled onClick={() => addAyah()} className="bg-[#3c217c] cursor-not-allowed font-bold py-2 px-4 rounded-lg text-lg" >Add</button> : <button onClick={() => addAyah()} className=" bg-[#3700b3] hover:bg-[#3c217c] text-white font-bold py-2 px-4 rounded-lg text-lg" >Add</button>
+            (Sable == true) ? <button disabled className="bg-[#3c217c] cursor-not-allowed font-bold py-2 px-4 rounded-lg text-lg" >Add</button> : <button onClick={() => addAyah()} className=" bg-[#3700b3] hover:bg-[#3c217c] text-white font-bold py-2 px-4 rounded-lg text-lg" >Add</button>
           }
           {
-            (Sable == true) ? <button disabled onClick={() => updateAyah()} className="bg-[#289389] cursor-not-allowed font-bold py-2 px-4 rounded-lg text-lg ml-2" >Update</button> : <button onClick={() => updateAyah()} className=" bg-[#03dac6] hover:bg-[#289389] text-white font-bold py-2 px-4 rounded-lg text-lg ml-2" >Update</button>
+            (Sable == true) ? <button disabled className="bg-[#289389] cursor-not-allowed font-bold py-2 px-4 rounded-lg text-lg ml-2" >Update</button> : <button onClick={() => updateAyah()} className=" bg-[#03dac6] hover:bg-[#289389] text-white font-bold py-2 px-4 rounded-lg text-lg ml-2" >Update</button>
           }
           {
-            (Commited == false) ? <button onClick={() => deleteAyah()} disabled className="cursor-not-allowed bg-[#cf6679]
+            (Commited == false) ? <button disabled className="cursor-not-allowed bg-[#cf6679]
             font-bold py-2 px-4 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button> : <button onClick={() => deleteAyah()} className=" hover:bg-[#cf6679] bg-[#cf4444] text-white font-bold py-2 px-4 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button>
           }
         </div>
