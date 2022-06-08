@@ -375,8 +375,8 @@ const InputField = () => {
       }
       <div className="flex justify-between items-center">
         <div className="flex">
-          <input type="numeric" required autoFocus placeholder="No of Ayah" className="mr-2 ayah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setAyah(e.target.value)} />
-          <input type="numeric" required placeholder="No of Surah" className="surah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setSurah(e.target.value)} />
+          <input type="number" max="286" min="1" required autoFocus placeholder="No of Ayah" className="mr-2 ayah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setAyah(e.target.value)} />
+          <input type="number" max="144" min="1" required placeholder="No of Surah" className="surah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setSurah(e.target.value)} />
         </div>
         <div className="flex">
           {
