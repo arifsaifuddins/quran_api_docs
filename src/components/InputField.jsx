@@ -292,7 +292,7 @@ const InputField = () => {
       ]
   }
 
-  const api = 'https://quran-rewayah-api.vercel.app/api/quran-rewayah'
+  const api = import.meta.env.VITE_URL
 
   const addAyah = async () => {
 
@@ -366,63 +366,69 @@ const InputField = () => {
   }
 
   return (
-    <div className="flex flex-col mx-auto mb-56 w-[700px]">
-      {
-        (Errored == true) && <div className="text-xl bg-slate-500 py-2 px-3 font-bold mb-4 rounded-lg text-white flex justify-between items-center">
-          <div>{Error}</div>
-          <button onClick={() => setErrored(false)} className="text-black hover:text-[#cf4444] text-2xl font-bold">&times;</button>
-        </div>
-      }
-      <div className="flex justify-between items-center">
-        <div className="flex">
-          <input type="number" max="286" min="1" required autoFocus placeholder="No of Ayah" className="mr-2 ayah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setAyah(e.target.value)} />
-          <input type="number" max="144" min="1" required placeholder="No of Surah" className="surah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setSurah(e.target.value)} />
-        </div>
-        <div className="flex">
-          {
-            (Commited == false) ? <button disabled className="cursor-not-allowed text-slate-500 bg-[#bb86fc] font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button> : <button onClick={() => Commit()} className=" bg-[#9242f3] hover:bg-[#bb86fc] text-white font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button>
-          }
-          {
-            (Sable == true) ? <button disabled className="bg-[#3c217c] cursor-not-allowed font-bold py-2 px-4 rounded-lg text-lg" >Add</button> : <button onClick={() => addAyah()} className=" bg-[#3700b3] hover:bg-[#3c217c] text-white font-bold py-2 px-4 rounded-lg text-lg" >Add</button>
-          }
-          {
-            (Sable == true) ? <button disabled className="bg-[#289389] cursor-not-allowed font-bold py-2 px-4 rounded-lg text-lg ml-2" >Update</button> : <button onClick={() => updateAyah()} className=" bg-[#03dac6] hover:bg-[#289389] text-white font-bold py-2 px-4 rounded-lg text-lg ml-2" >Update</button>
-          }
-          {
-            (Commited == false) ? <button disabled className="cursor-not-allowed bg-[#cf6679]
-            font-bold py-2 px-4 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button> : <button onClick={() => deleteAyah()} className=" hover:bg-[#cf6679] bg-[#cf4444] text-white font-bold py-2 px-4 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button>
-          }
-        </div>
+    <div className="flex flex-col">
+      <div className="flex items-center justify-around mx-auto mt-16 mb-10">
+        <img src="./icon/quran.png" alt="icon" className="w-20" />
+        <h1 className="text-6xl ml-5 font-bold">Quran Rewayah GUI</h1>
       </div>
-      <hr className="my-5" />
-      <div className="flex justify-between">
-        <div className="flex flex-col w-80">
-          {
-            quraa[0].map((qari, i) => {
-              return (
-                <div className={`flex flex-col w-[100%] ${qari}`} key={i}>
-                  <div className="flex justify-between text-white text-xl font-bold mt-3 border-b pb-3">
-                    <label >{`Imam ${qari} :`}</label>
-                    <button onClick={() => addInput(qari)} className="rounded-full font-bold hover:bg-[#cf6679] bg-[#cf4444] w-12 text-center">+</button>
-                  </div>
-                </div>
-              )
-            })
-          }
+      <div className="flex flex-col mx-auto mb-56 w-[700px]">
+        {
+          (Errored == true) && <div className="text-xl bg-slate-500 py-2 px-3 font-bold mb-4 rounded-lg text-white flex justify-between items-center">
+            <div>{Error}</div>
+            <button onClick={() => setErrored(false)} className="text-black hover:text-[#cf4444] text-2xl font-bold">&times;</button>
+          </div>
+        }
+        <div className="flex justify-between items-center">
+          <div className="flex">
+            <input type="number" max="286" min="1" required autoFocus placeholder="No of Ayah" className="mr-2 ayah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setAyah(e.target.value)} />
+            <input type="number" max="144" min="1" required placeholder="No of Surah" className="surah text-white w-40 bg-transparent py-2 px-3 rounded-lg text-lg  border outline-none border-slate-400" onChange={(e) => setSurah(e.target.value)} />
+          </div>
+          <div className="flex">
+            {
+              (Commited == false) ? <button disabled className="cursor-not-allowed text-slate-500 bg-[#bb86fc] font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button> : <button onClick={() => Commit()} className=" bg-[#9242f3] hover:bg-[#bb86fc] text-white font-bold py-2 px-5 rounded-lg text-lg mr-2" >Commit</button>
+            }
+            {
+              (Sable == true) ? <button disabled className="bg-[#3c217c] cursor-not-allowed font-bold py-2 px-4 rounded-lg text-lg" >Add</button> : <button onClick={() => addAyah()} className=" bg-[#3700b3] hover:bg-[#3c217c] text-white font-bold py-2 px-4 rounded-lg text-lg" >Add</button>
+            }
+            {
+              (Sable == true) ? <button disabled className="bg-[#289389] cursor-not-allowed font-bold py-2 px-4 rounded-lg text-lg ml-2" >Update</button> : <button onClick={() => updateAyah()} className=" bg-[#03dac6] hover:bg-[#289389] text-white font-bold py-2 px-4 rounded-lg text-lg ml-2" >Update</button>
+            }
+            {
+              (Commited == false) ? <button disabled className="cursor-not-allowed bg-[#cf6679]
+            font-bold py-2 px-4 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button> : <button onClick={() => deleteAyah()} className=" hover:bg-[#cf6679] bg-[#cf4444] text-white font-bold py-2 px-4 rounded-lg text-lg ml-2" ><i className="fa fa-trash-can"></i></button>
+            }
+          </div>
         </div>
-        <div className="flex flex-col w-80">
-          {
-            quraa[1].map((qari, i) => {
-              return (
-                <div className={`flex flex-col w-[100%] ${qari}`} key={i}>
-                  <div className="flex justify-between text-white text-xl font-bold mt-3 border-b pb-3">
-                    <label >{`Imam ${qari} :`}</label>
-                    <button onClick={() => addInput(qari)} className="rounded-full font-bold hover:bg-[#cf6679] bg-[#cf4444] w-12 text-center">+</button>
+        <hr className="my-5" />
+        <div className="flex justify-between">
+          <div className="flex flex-col w-80">
+            {
+              quraa[0].map((qari, i) => {
+                return (
+                  <div className={`flex flex-col w-[100%] ${qari}`} key={i}>
+                    <div className="flex justify-between text-white text-xl font-bold mt-3 border-b pb-3">
+                      <label >{`Imam ${qari} :`}</label>
+                      <button onClick={() => addInput(qari)} className="rounded-full font-bold hover:bg-[#cf6679] bg-[#cf4444] w-12 text-center">+</button>
+                    </div>
                   </div>
-                </div>
-              )
-            })
-          }
+                )
+              })
+            }
+          </div>
+          <div className="flex flex-col w-80">
+            {
+              quraa[1].map((qari, i) => {
+                return (
+                  <div className={`flex flex-col w-[100%] ${qari}`} key={i}>
+                    <div className="flex justify-between text-white text-xl font-bold mt-3 border-b pb-3">
+                      <label >{`Imam ${qari} :`}</label>
+                      <button onClick={() => addInput(qari)} className="rounded-full font-bold hover:bg-[#cf6679] bg-[#cf4444] w-12 text-center">+</button>
+                    </div>
+                  </div>
+                )
+              })
+            }
+          </div>
         </div>
       </div>
     </div>
