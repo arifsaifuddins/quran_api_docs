@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 function Header() {
 
-  const [Admin, setAdmin] = useState(false)
+  const [Admin, setAdmin] = useState(true)
 
   const active = ({ isActive }) => {
     return {
@@ -21,7 +21,7 @@ function Header() {
         <div className="flex max-w-max justify-between items-center">
           <NavLink style={active} className="mx-3" to="/">Home</NavLink>
           <NavLink style={active} className="mx-3" to="/docs">Docs</NavLink>
-          {/* <NavLink style={active} className="mx-3" to="/rewayah">Rewayah</NavLink> */}
+          <NavLink style={active} className="mx-3" to="/quraa">Quraa</NavLink>
           <NavLink style={active} className="mx-3" to="/about">About</NavLink>
           {
             Admin === true && <NavLink style={active} className="mx-3" to="/fields">Admin</NavLink>

@@ -12,7 +12,7 @@ function Login() {
         <div className="mt-4 text-center text-lg font-bold w-[100%]" >Have Not an Account? <Link to="/register" className=" text-[#3700b3] hover:text-[#3c217c]">Register</Link></div>
       </form>
       <div className="flex flex-col mt-20 w-[100%] px-20">
-        <h1 className="pb-3 text-xl">You are logged in as Arief, And this your Token!</h1><hr />
+        <h1 className="pb-3 text-xl">You are logged in as Arief, And this your Token!, <Link to="/login" className=" hover:text-red-700 text-red-500">Log Out?</Link></h1><hr />
         <div className="flex mt-3">
           <input type="text" placeholder="Your Token here, Login!" className=" bg-transparent text-white py-2 pl-3 rounded-xl text-lg  border outline-none border-slate-400 w-[100%]" />
           <i className="fas hover:bg-red-700 bg-red-500 text-white font-bold py-2 cursor-pointer px-3 rounded-xl text-lg ml-2 fa-arrow-rotate-right"></i>

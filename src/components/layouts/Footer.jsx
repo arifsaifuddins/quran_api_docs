@@ -8,7 +8,7 @@ function Footer() {
           <h1 className="font-semibold text-xl mb-2">&bull; Page Links :</h1>
           <Link className="mt-2 font-thin hover:font-normal ml-4 hover:text-[#ebebeb]" to="/">Home</Link>
           <Link className="mt-2 font-thin hover:font-normal ml-4 hover:text-[#ebebeb]" to="/docs">Docs</Link>
-          {/* <Link className="mt-2 font-thin hover:font-normal ml-4 hover:text-[#ebebeb]" to="/rewayah">Rewayah</Link> */}
+          <Link className="mt-2 font-thin hover:font-normal ml-4 hover:text-[#ebebeb]" to="/quraa">Quraa</Link>
           <Link className="mt-2 font-thin hover:font-normal ml-4 hover:text-[#ebebeb]" to="/about">About</Link>
           <Link className="mt-2 font-thin hover:font-normal ml-4 hover:text-[#ebebeb]" to="/login">Get Token</Link>
         </div>
