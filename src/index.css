@@ -10,4 +10,8 @@
     appearance: none;
     -moz-appearance: textfield;
   }
+
+  html {
+    background-image: url('./images/bg.jpg');
+  }
 }
