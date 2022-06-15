@@ -14,7 +14,7 @@ function Home() {
       <hr />
       <div className="flex justify-around pt-20">
         <div className="flex items-center">
-          <img src="/images/arief.jpg" className="border-2 border-[#ebebeb] w-36 h-36 rounded-full mr-4" alt="Arief Photo" />
+          <img src="https://avatars.githubusercontent.com/u/87503629?v=4" className="border-2 border-[#ebebeb] w-36 h-36 rounded-full mr-4" alt="Arief Photo" />
           <div className="flex flex-col">
             <h1 className="text-xl font-bold text-[#ebebeb] border-b border-slate-400">Arief Saifuddien</h1>
             <p className="text-white"><i className="mr-2 mt-2 fas fa-briefcase"></i> API Founder</p>
@@ -23,7 +23,7 @@ function Home() {
           </div>
         </div>
         <div className="flex items-center">
-          <img src="/images/toyin.jpg" className="border-2 border-[#ebebeb] w-36 h-36 rounded-full mr-4" alt="Toyin Photo" />
+          <img src="https://avatars.githubusercontent.com/u/40214690?v=4" className="border-2 border-[#ebebeb] w-36 h-36 rounded-full mr-4" alt="Toyin Photo" />
           <div className="flex flex-col">
             <h1 className="text-xl font-bold text-[#ebebeb] border-b border-slate-400">Muhammad Toyin</h1>
             <p className="text-white"><i className="mr-2 mt-2 fas fa-briefcase"></i> API Co Founder</p>
