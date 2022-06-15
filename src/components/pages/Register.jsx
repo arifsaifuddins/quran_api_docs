@@ -52,13 +52,16 @@ function Register() {
       .then(j => {
         if (j.data) {
           setError(j.message + ' as ' + j.data.username)
+          setCommited(true)
           setErrored(true)
         } else {
           setError(j.message)
+          setCommited(true)
           setErrored(true)
         }
       }).catch(j => {
         setError(j.message)
+        setCommited(true)
         setErrored(true)
       })
   }

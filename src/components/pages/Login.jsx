@@ -76,6 +76,7 @@ function Login() {
           window.location.assign('/login')
         } else {
           setError(j.message)
+          setCommited(true)
           setErrored(true)
         }
       })
@@ -106,6 +107,7 @@ function Login() {
           setErrored(true)
         } else {
           setError(j.message)
+          setCommited(true)
           setErrored(true)
         }
       })
