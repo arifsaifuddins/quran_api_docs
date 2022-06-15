@@ -17,7 +17,7 @@ function App() {
   const [Admin, setAdmin] = useState(false)
 
   useEffect(() => {
-    if (localStorage.getItem('admin') == 'Arief Saifuddien' || localStorage.getItem('admin') == 'Muhammed Toyin') {
+    if (localStorage.getItem('admin') == 'Arief Saifuddien' || localStorage.getItem('admin') == 'Toyin Muhammed') {
       setAdmin(true)
     } else if (!localStorage.getItem('admin')) {
       setAdmin(false)

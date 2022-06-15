@@ -398,10 +398,10 @@ const Fields = () => {
               (Commited == false) ? <button disabled className="cursor-not-allowed text-slate-500 bg-[#bb86fc] font-bold py-2 px-4 rounded-xl text-lg mr-2" >Commit</button> : <button onClick={() => Commit()} className=" bg-[#9242f3] hover:bg-[#bb86fc] text-white font-bold py-2 px-4 rounded-xl text-lg mr-2" >Commit</button>
             }
             {
-              (Sable == true) ? <button disabled className="bg-[#3c217c] cursor-not-allowed font-bold py-2 px-3 rounded-xl text-lg" >Add Ayah</button> : <button onClick={() => addAyah()} className=" bg-[#3700b3] hover:bg-[#3c217c] text-white font-bold py-2 px-3 rounded-xl text-lg" >Add Ayah</button>
+              (Sable == true) ? <button disabled className="bg-[#3c217c] cursor-not-allowed font-bold py-2 px-3 rounded-xl text-lg" >Add <span className="sm:flex hidden">Ayah</span></button> : <button onClick={() => addAyah()} className=" bg-[#3700b3] hover:bg-[#3c217c] text-white font-bold py-2 px-3 rounded-xl text-lg" >Add <span className="sm:flex hidden">Ayah</span></button>
             }
             {
-              (Sable == true) ? <button disabled className="bg-green-700 cursor-not-allowed text-slate-300 font-bold py-2 px-3 rounded-xl text-lg ml-2" >Update Ayah</button> : <button onClick={() => updateAyah()} className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-3 rounded-xl text-lg ml-2" >Update Ayah</button>
+              (Sable == true) ? <button disabled className="bg-green-700 cursor-not-allowed text-slate-300 font-bold py-2 px-3 rounded-xl text-lg ml-2" >Update <span className="sm:flex hidden">Ayah</span></button> : <button onClick={() => updateAyah()} className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-3 rounded-xl text-lg ml-2" >Update <span className="sm:flex hidden">Ayah</span></button>
             }
             {
               (Commited == false) ? <button disabled className="cursor-not-allowed bg-red-700

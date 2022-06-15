@@ -77,7 +77,7 @@ function Register() {
           </div>
         }
         <input required type="text" placeholder="Input an Username..." onChange={(e) => setName(e.target.value)} className="name mt-2 bg-transparent text-white py-2 pl-3 rounded-xl text-lg  border outline-none border-slate-400 w-[100%]" />
-        <input required type="email" placeholder="Input an Email Address..." onChange={(e) => setEmail(e.target.value)} className="email mt-5 bg-transparent text-white py-2 pl-3 rounded-xl text-lg  border outline-none border-slate-400 w-[100%]" />
+        <input required type="email" placeholder="Input an Email Address..." onChange={(e) => setEmail(e.target.value)} className="email mt-2 bg-transparent text-white py-2 pl-3 rounded-xl text-lg  border outline-none border-slate-400 w-[100%]" />
         <input required type="password" placeholder="Input your Password..." onChange={(e) => setPass(e.target.value)} className="pass mt-5 bg-transparent text-white py-2 pl-3 rounded-xl text-lg  border outline-none border-slate-400 w-[100%]" />
         <input required type="password" placeholder="Konfirm your Password..." onChange={(e) => setConfPass(e.target.value)} className="confpass mt-2 bg-transparent text-white py-2 pl-3 rounded-xl text-lg  border outline-none border-slate-400 w-[100%]" />
         {

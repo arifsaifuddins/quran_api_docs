@@ -121,7 +121,7 @@ function About() {
             }
           </form>
 
-          <div className="flex w-max flex-col justify-around items-center bg-slate-800 opacity-70 rounded-lg px-12 md:px-8 lg:px-12 py-8 ml-5">
+          <div className="flex w-max flex-col justify-around items-center bg-slate-800 opacity-70 rounded-lg px-12 md:px-8 lg:px-12 py-8 md:ml-5">
             <div className="text-center mb-6">
               <h1 className="text-xl font-bold text-[#ebebeb] ">Arief Saifuddien</h1>
               <p className="mt-6 text-2xl">
