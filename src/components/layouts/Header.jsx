@@ -23,7 +23,7 @@ function Header({ admin }) {
           <h1 className="text-4xl font-bold text-green-500 flex items-center"><span className="text-3xl text-slate-400 font-thin">&lt;</span> Quran<span className="text-[#ebebeb]">7 </span><span className="text-3xl text-slate-400 font-thin">&gt;</span></h1>
         </Link>
         <div className="flex max-w-max justify-between items-center">
-          <NavLink style={active} className="mx" to="/">Home</NavLink>
+          <NavLink style={active} className="mx-3" to="/">Home</NavLink>
           <NavLink style={active} className="mx-3" to="/docs">Docs</NavLink>
           <NavLink style={active} className="mx-3" to="/quraa">Quraa</NavLink>
           <NavLink style={active} className="mx-3" to="/about">About</NavLink>
