@@ -67,11 +67,11 @@ function Register() {
   }
 
   return (
-    <div className="flex flex-col items-center mx-auto w-[700px] mb-20">
-      <h1 className="text-5xl my-10 font-bold">User Sign Up</h1>
-      <form className="w-[100%] px-20">
+    <div className="flex flex-col items-center mx-auto w-[100%] sm:w-[700px] mb-20 font-[tajawal]">
+      <h1 className="md:text-5xl text-4xl mt-10 mb-20 font-bold">User Sign Up</h1>
+      <form className="w-[100%] px-4 sm:px-20">
         {
-          (Errored == true) && <div className="text-xl w-[100%] bg-slate-500 py-2 px-3 font-bold mb-4 rounded-xl text-white flex justify-between items-center">
+          (Errored == true) && <div className="text-md md:text-xl w-[100%] bg-slate-500 py-2 px-3 font-bold mb-4 rounded-xl text-white flex justify-between items-center">
             <div>{Error}</div>
             <button onClick={() => setErrored(false)} className="text-black hover:text-red-500 text-2xl font-bold">&times;</button>
           </div>

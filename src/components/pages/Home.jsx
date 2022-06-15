@@ -2,13 +2,15 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="flex flex-col w-[1000px] mx-auto mb-20 p-4">
-      <div className="flex h-96">
+    <div className="flex flex-col w-[100%] lg:w-[1000px] mx-auto mb-20 p-4 font-[tajawal]">
+      <div className="flex md:h-96 h-[500px]">
         <div className="text-center m-auto">
-          <h1 className=" text-7xl font-bold mt-10 text-[#ebebeb]"><span className="text-green-500">Quran</span> Rewayah 7 <span className="text-red-500">API</span></h1>
-          <p className="font-thin text-4xl mt-6">An API for The Seven Variations(Rewayah) of The Quran</p>
+
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mt-10 text-[#ebebeb]"><span className="text-green-500">Quran</span> Rewayah 7 <span className="text-red-500">API</span></h1>
+          <p className="font-thin sm:text-2xl md:text-3xl lg:text-4xl text-xl mt-6">An API for Seven Variations(Rewayah) of Quran</p>
         </div>
       </div>
+
       <Link className="mt-10 mb-40 w-52 text-center mx-auto bg-green-500 hover:bg-green-700 font-semibold px-4 py-2 text-[#ebebeb] rounded-full" to="/login">Get Token <i className="ml-2 fas fa-up-right-from-square"></i></Link>
       <p className="font-bold text-3xl text-center mb-20"><i>""</i></p>
       <hr />

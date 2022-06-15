@@ -375,24 +375,25 @@ const Fields = () => {
   }
 
   return (
-    <div className="flex flex-col">
-      <div className="flex items-center justify-around mx-auto mt-6 mb-10">
-        <img src="./icon/quran.png" alt="icon" className="w-20" />
-        <h1 className="text-5xl ml-5 font-bold">Quran Rewayah 7 Admin</h1>
+    <div className="flex flex-col px-4 font-[tajawal]">
+      <div className="flex items-center justify-around mx-auto my-14">
+        <img src="./icon/quran.png" alt="icon" className="w-12 sm:w-16 lg:w-24" />
+        <h1 className="lg:text-6xl md:text-5xl text-4xl ml-4 font-bold">Quran <span className="text-red-500">Admin</span></h1>
       </div>
-      <div className="flex flex-col mx-auto mb-20 w-[900px]">
+
+      <div className="flex flex-col mx-auto mt-8 mb-32 lg:w-[900px] w-full lg:px-0 sm:px-20 md:px-28">
         {
           (Errored == true) && <div className="text-xl bg-slate-500 py-2 px-3 font-bold mb-4 rounded-xl text-white flex justify-between items-center">
             <div>{Error}</div>
             <button onClick={() => setErrored(false)} className="text-black hover:text-red-500 text-2xl font-bold">&times;</button>
           </div>
         }
-        <div className="flex justify-between items-center">
-          <div className="flex ml-4">
+        <div className="flex justify-between items-center flex-col lg:flex-row">
+          <div className="flex lg:ml-4 lg:mb-0 mb-4">
             <input type="number" max="286" min="1" required autoFocus placeholder="No of Ayah" className="mr-2 ayah text-white w-48 bg-transparent py-2 px-3 rounded-xl text-lg  border outline-none border-slate-400" onChange={(e) => setAyah(e.target.value)} />
             <input type="number" max="144" min="1" required placeholder="No of Surah" className="surah text-white w-48 bg-transparent py-2 px-3 rounded-xl text-lg  border outline-none border-slate-400" onChange={(e) => setSurah(e.target.value)} />
           </div>
-          <div className="flex mr-4">
+          <div className="flex lg:mr-4">
             {
               (Commited == false) ? <button disabled className="cursor-not-allowed text-slate-500 bg-[#bb86fc] font-bold py-2 px-4 rounded-xl text-lg mr-2" >Commit</button> : <button onClick={() => Commit()} className=" bg-[#9242f3] hover:bg-[#bb86fc] text-white font-bold py-2 px-4 rounded-xl text-lg mr-2" >Commit</button>
             }
@@ -409,8 +410,8 @@ const Fields = () => {
           </div>
         </div>
         <hr className="my-5" />
-        <div className="flex justify-between">
-          <div className="flex flex-col w-96 ml-4">
+        <div className="flex justify-between flex-col lg:flex-row">
+          <div className="flex flex-col lg:w-96 lg:ml-4 w-[100%]">
             {
               quraa[0].map((qari, i) => {
                 return (
@@ -424,7 +425,7 @@ const Fields = () => {
               })
             }
           </div>
-          <div className="flex flex-col w-96 mr-4">
+          <div className="flex flex-col lg:w-96 lg:mr-4 w-[100%]">
             {
               quraa[1].map((qari, i) => {
                 return (
