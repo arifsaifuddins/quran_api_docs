@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 function Docs() {
   return (
-    <div className="flex justify-between px-4 -mt-4 mx-auto w-[1000px]">
-      <div className="flex flex-col w-[75%] h-[100vh] overflow-scroll pt-14 pb-36 pr-10">
+    <div className="flex justify-between px-4 -mt-4 mx-auto w-[100%] lg:w-[1000px] flex-col md:flex-row font-[tajawal]">
+      <div className="flex flex-col md:w-[75%] h-[100vh] overflow-scroll pt-14 pb-36 lg:pr-10 md:pr-5">
         <h1 className="font-semibold text-2xl mb-2 pb-3 border-b border-slate-400 text-white ">Documentation :</h1>
 
         <h2 id="started" className="pt-20 mb-5 font-bold text-xl text-red-500"><div className="text-white inline mr-2">&bull;</div> Get Started</h2>
@@ -164,14 +164,14 @@ function Docs() {
         </code></pre>
 
       </div>
-      <div className="flex flex-col ml-10 py-14">
-        <h1 className="font-semibold text-2xl mb-2 pb-3 border-b border-slate-400 text-white">Navigation Links :</h1>
-        <a href="#started" className=" mt-5 hover:text-white text-md">Get Started</a>
-        <a href="#token" className=" mt-5 hover:text-white text-md">Get Token</a>
-        <a href="#juz" className=" mt-5 hover:text-white text-md">One Juz Of Quran</a>
-        <a href="#surah" className=" mt-5 hover:text-white text-md">All Surah Of Quran</a>
-        <a href="#onesurah" className=" mt-5 hover:text-white text-md">One Surah Of Quran</a>
-        <a href="#oneayah" className=" mt-5 hover:text-white text-md">One Ayah Of Surah in Quran</a>
+      <div className="flex flex-col md:ml-5 py-14">
+        <h1 className="font-semibold text-2xl mb-2 pr-5 pb-3 border-b border-slate-400 text-white">Navigation :</h1>
+        <a href="#started" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">Get Started</a>
+        <a href="#token" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">Get Token</a>
+        <a href="#juz" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">One Juz Of Quran</a>
+        <a href="#surah" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">All Surah Of Quran</a>
+        <a href="#onesurah" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">One Surah Of Quran</a>
+        <a href="#oneayah" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">One Ayah Of Surah</a>
       </div>
     </div>
   );
