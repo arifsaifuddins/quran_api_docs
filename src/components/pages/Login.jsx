@@ -114,13 +114,18 @@ function Login() {
   const copyToken = () => {
     const token = document.querySelector(".token");
 
-    token.select();
-    token.setSelectionRange(0, 99999)
+    if (token.value != '') {
+      token.select();
+      token.setSelectionRange(0, 99999)
 
-    navigator.clipboard.writeText(token.value);
+      navigator.clipboard.writeText(token.value);
 
-    setError('The API token copied!')
-    setErrored(true)
+      setError('The API token copied!')
+      setErrored(true)
+    } else {
+      setError('No token copied, please login!')
+      setErrored(true)
+    }
   }
 
   return (
