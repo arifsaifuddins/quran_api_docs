@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-function Header() {
+function Header({ admin }) {
 
-  const [Admin, setAdmin] = useState(true)
+  const [Admin, setAdmin] = useState(false)
+
+  useEffect(() => {
+    setAdmin(admin)
+  })
 
   const active = ({ isActive }) => {
     return {

@@ -17,18 +17,18 @@ function Home() {
           <img src="/images/arief.jpg" className="border-2 border-[#ebebeb] w-36 h-36 rounded-full mr-4" alt="Arief Photo" />
           <div className="flex flex-col">
             <h1 className="text-xl font-bold text-[#ebebeb] border-b border-slate-400">Arief Saifuddien</h1>
-            <p><i class="mr-2 mt-2 fas fa-briefcase"></i> API Founder</p>
-            <a className="font-thin hover:text-white" target="_blank" href="https://github.com/saifuddien"><i className="mr-2 fab fa-github"></i> saifuddien</a>
-            <p className="font-thin"><i className="mr-2 fas fa-location-dot"></i> Jepara, Indonesia</p>
+            <p className="text-white"><i className="mr-2 mt-2 fas fa-briefcase"></i> API Founder</p>
+            <a className="font-thin text-white hover:text-white" target="_blank" href="https://github.com/saifuddien"><i className="mr-2 fab fa-github"></i> saifuddien</a>
+            <p className="font-thin text-white"><i className="mr-2 fas fa-location-dot"></i> Jepara, Indonesia</p>
           </div>
         </div>
         <div className="flex items-center">
           <img src="/images/toyin.jpg" className="border-2 border-[#ebebeb] w-36 h-36 rounded-full mr-4" alt="Toyin Photo" />
           <div className="flex flex-col">
-            <h1 className="text-xl font-bold text-[#ebebeb] border-b border-slate-400">Toyin Muhammed</h1>
-            <p><i class="mr-2 mt-2 fas fa-briefcase"></i> API Co Founder</p>
-            <a className="font-thin hover:text-white" target="_blank" href="https://github.com/Toyin5"><i className="mr-2 fab fa-github"></i> Toyin5</a>
-            <p className="font-thin"><i className="mr-2 fas fa-location-dot"></i> Lagos, Nigeria</p>
+            <h1 className="text-xl font-bold text-[#ebebeb] border-b border-slate-400">Muhammad Toyin</h1>
+            <p className="text-white"><i className="mr-2 mt-2 fas fa-briefcase"></i> API Co Founder</p>
+            <a className="font-thin text-white hover:text-white" target="_blank" href="https://github.com/Toyin5"><i className="mr-2 fab fa-github"></i> Toyin5</a>
+            <p className="font-thin text-white"><i className="mr-2 fas fa-location-dot"></i> Lagos, Nigeria</p>
           </div>
         </div>
       </div>
