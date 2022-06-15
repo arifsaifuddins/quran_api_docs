@@ -293,6 +293,7 @@ const Fields = () => {
   }
 
   const api = import.meta.env.VITE_URL
+  const token = import.meta.env.VITE_TOKEN
 
   const addAyah = async () => {
 
@@ -301,7 +302,8 @@ const Fields = () => {
     await fetch(`${api}/ayah/${Ayah}?surah=${Surah}`, {
       headers: {
         'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'auth-token': token
       },
       method: 'POST',
       body: JSON.stringify(rewayah)
@@ -320,7 +322,8 @@ const Fields = () => {
     await fetch(`${api}/ayah/${Ayah}?surah=${Surah}`, {
       headers: {
         'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'auth-token': token
       },
       method: 'PUT',
       body: JSON.stringify(rewayah)
@@ -338,6 +341,9 @@ const Fields = () => {
 
     await fetch(`${api}/ayah/${Ayah}?surah=${Surah}`, {
       method: 'DELETE',
+      headers: {
+        'auth-token': token
+      }
     })
       .then(r => r.json())
       .then(j => {
