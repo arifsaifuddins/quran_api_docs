@@ -22,12 +22,10 @@ function Footer() {
         </div>
         <div className="flex flex-col mb-16 md:text-xs lg:text-base">
           <h1 className="font-semibold text-xl mb-2">&bull; Contributtor :</h1>
-          <div className="flex flex-col sm:inline md:flex">
-            <a className="mt-2 font-thin ml-4 hover:text-white" target="_blank" href="https://github.com/saifuddien/quran_rewayah_gui"><i className="mr-2 fab fa-github"></i> Quran Rewayah</a>
-            <a className="mt-2 font-thin ml-4 hover:text-white" target="_blank" href="https://github.com/saifuddien"><i className="mr-2 fab fa-github"></i> Arief Saifuddien (Indonesia)</a>
-            <a className="mt-2 font-thin ml-4 hover:text-white" target="_blank" href="https://github.com/Toyin5"><i className="mr-2 fab fa-github"></i> Muhammad Toyin (Nigeria)</a>
-          </div>
-          <h1 className="mt-6 ml-4"><i className="mr-2 fas fa-earth-africa"></i> Karthoum | Sudan | Africa</h1>
+          {/* <a className="mt-2 font-thin ml-4 hover:text-white" target="_blank" href="https://github.com/saifuddien/quran_rewayah_gui"><i className="mr-2 fab fa-github"></i> Quran Rewayah</a> */}
+          <a className="mt-2 font-thin ml-4 hover:text-white" target="_blank" href="https://github.com/saifuddien"><i className="mr-2 fab fa-github"></i> Arief Saifuddien (Indonesia)</a>
+          <a className="mt-2 font-thin ml-4 hover:text-white" target="_blank" href="https://github.com/Toyin5"><i className="mr-2 fab fa-github"></i> Toyin Muhammad (Nigeria)</a>
+          <h1 className="mt-6 ml-4"><i className="mr-2 fas fa-earth-africa"></i> Khartoum | Sudan | Africa</h1>
         </div>
         <div className="flex flex-col mb-16 md:text-xs lg:text-base items-center">
           <Link to={'/'}>
