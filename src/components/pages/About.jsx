@@ -4,9 +4,9 @@ function About() {
       <div className="flex justify-between px-4 py-10 ">
         <div className="flex flex-col w-[70%]">
           <h1 className="font-semibold text-2xl mb-2 pb-3 border-b border-slate-400 text-green-500 ">About API Rewayah :</h1>
-          <p className="mt-4 first-letter:ml-10">Hello Everybody!, This is an API for <span className="text-green-500">Seven Rewayah of Quran Kareem</span>, This made couse i haven't see someone create an API like this, then i am starting to think if i can make it as API for anyone can get it easly, and i am named it <span className="text-red-500 font-bold italic">"Quran Rewayah 7"</span>.</p>
-          <p className="mt-4 first-letter:ml-10">So, i am <a className="text-green-500" href="https://github.com/saifuddien">Arief Saifuddien</a> from Jepara, Indonesia. I am a Student for <span className="font-bold italic">Islamic Studies</span> at International University of Africa Sudan <a href="https://iua.edu.sd" className="text-green-500 ">(IUA)</a>. I am made it actually not alone, but with my friend <a className="text-green-500" href="https://github.com/Toyin5">Muhammad Toyin</a> from Lagos, Nigeria. He is a Student for <span className="font-bold italic">Computer Science</span> at <a href="https://iua.edu.sd" className="text-green-500 ">(IUA)</a> too.</p>
-          <p className="mt-6 font-bold italic">Thanks for visitting us!. Give us start, and support us for anything...</p>
+          <p className="mt-4 first-letter:ml-10">Hello! Welcome, This is an API for <span className="text-green-500">Seven Rewayah of the Quran Kareem</span>. It was made because there isn't much api that do this. It's named <span className="text-red-500 font-bold italic">"Quran Rewayah 7"</span>.</p>
+          <p className="mt-4 first-letter:ml-10">So, I am <a className="text-green-500" href="https://github.com/saifuddien">Arief Saifuddien</a> from Jepara, Indonesia. I am a student of <span className="font-bold italic">Islamic Studies</span> at International University of Africa, Sudan <a href="https://iua.edu.sd" className="text-green-500 ">(IUA)</a>.In collaboration with my friend <a className="text-green-500" href="https://github.com/Toyin5">Toyin Muhammed</a> from Lagos, Nigeria. He is a student of <span className="font-bold italic">Computer Science</span> at <a href="https://iua.edu.sd" className="text-green-500 ">(IUA)</a> too.</p>
+          <p className="mt-6 font-bold italic">Thanks for visitting!. Give us star, and support us with anything...</p>
         </div>
         <div className="flex flex-col ml-10">
           <h1 className="font-semibold text-2xl mb-2 pb-3 border-b border-slate-400 text-green-500">API Made With :</h1>
@@ -36,7 +36,7 @@ function About() {
           <div className="flex items-center">
             <img src="/images/toyin.jpg" className="border-2 border-[#ebebeb] w-40 h-40 rounded-full mr-4" alt="Toyin Photo" />
             <div className="flex flex-col">
-              <h1 className="text-xl font-bold text-[#ebebeb] border-b border-slate-400">Muhammad Toyin</h1>
+              <h1 className="text-xl font-bold text-[#ebebeb] border-b border-slate-400">Toyin Muhammed</h1>
               <p ><i class="mr-2 mt-2 fas fa-briefcase"></i> API Co Founder</p>
               <p className="font-thin"><i class="fas fa-swatchbook mr-2 mt-2"></i> Computer Science</p>
               <p className="font-thin"><i class="fas fa-hotel mr-2 mt-2"></i> International University of Africa</p>
