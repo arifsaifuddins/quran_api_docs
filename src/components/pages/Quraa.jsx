@@ -5,7 +5,7 @@ function Quraa() {
 
   const [dataQuraa, setdataQuraa] = useState(null)
 
-  const url = import.meta.env.VITE_URL
+  const url_vite = import.meta.env.VITE_URL
   const token = import.meta.env.VITE_TOKEN
   const quraa_url = import.meta.env.VITE_QURAA
 
@@ -28,7 +28,7 @@ function Quraa() {
   }
 
   const downloadFile = async (e) => {
-    await fetch(url + e)
+    await fetch(`${url_vite}/${e}`)
       .then(r => r.blob())
       .then(j => {
 
@@ -36,7 +36,7 @@ function Quraa() {
         let a = document.createElement('a')
 
         a.href = url
-        a.download = e
+        a.download = e.replace(/^.*[\\\/]/, '')
 
         document.body.appendChild(a)
         a.click()
