@@ -1,6 +1,6 @@
 export const Juz = () => {
   return (
-    <div className="overflow-scroll h-[80vh] m-2 text-black">
+    <div className="overflow-scroll h-[80vh] py-5 m-2 text-yellow-500">
       <span>{'{'}</span><br />
       <span className="hljs-attr ml-5">"code"</span>: <span className="hljs-number">404</span>,<br />
       <span className="hljs-attr ml-5">"message"</span>: <span className="hljs-string">"Page Not Found"</span>,<br />
@@ -42,7 +42,7 @@ export const Juz = () => {
 
 export const Surah = () => {
   return (
-    <div className="overflow-scroll h-[80vh] m-2 text-red-500">
+    <div className="overflow-scroll h-[80vh] py-5 m-2 text-red-500">
       <span>{'{'}</span><br />
       <span className="hljs-attr ml-5">"code"</span>: <span className="hljs-number">404</span>,<br />
       <span className="hljs-attr ml-5">"message"</span>: <span className="hljs-string">"Page Not Found"</span>,<br />
@@ -77,7 +77,7 @@ export const Surah = () => {
 
 export const Ayah = () => {
   return (
-    <div className="overflow-scroll h-[80vh] m-2">
+    <div className="overflow-scroll h-[80vh] py-5 m-2">
       <span>{'{'}</span><br />
       <span className="hljs-attr ml-5">"code"</span>: <span className="hljs-number">404</span>,<br />
       <span className="hljs-attr ml-5">"message"</span>: <span className="hljs-string">"Page Not Found"</span>,<br />
@@ -105,7 +105,7 @@ export const Ayah = () => {
 
 export const Quraa = () => {
   return (
-    <div className="overflow-scroll h-[80vh] m-2 text-black">
+    <div className="overflow-scroll h-[80vh] py-5 m-2 text-blue-500">
       <span>{'{'}</span><br />
       <span className="hljs-attr ml-5">"code"</span>: <span className="hljs-number">404</span>,<br />
       <span className="hljs-attr ml-5">"message"</span>: <span className="hljs-string">"Page Not Found"</span>,<br />

@@ -4,6 +4,31 @@
 
 @layer base {
 
+  body {
+    background-image: url('./images/bg.jpg');
+    background-attachment: fixed;
+  }
+
+  *::selection {
+    @apply text-white bg-green-300
+  }
+
+  *::scrollbar {
+    @apply w-2
+  }
+
+  *::scrollbar-track {
+    @apply bg-none
+  }
+
+  *::scrollbar-thumb {
+    @apply bg-slate-400
+  }
+
+  *::scrollbar-thumb:hover {
+    @apply bg-green-500
+  }
+
   input[type="number"],
   input::-webkit-inner-spin-button,
   input::-webkit-outer-spin-button {

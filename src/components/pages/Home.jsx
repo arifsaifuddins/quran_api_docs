@@ -15,15 +15,14 @@ function Home() {
   }, [])
 
   const getData = async () => {
-    const ayah = Math.ceil(Math.random() * 10)
-    const surah = Math.ceil(Math.random() * 80)
+    const ayah = Math.ceil(Math.random() * 10) + 1
+    const surah = Math.ceil(Math.random() * 80) + 1
 
     return await fetch(`https://api.quran.sutanlab.id/surah/${surah}/${ayah}`)
       .then(r => r.json())
       .then(j => {
-        if (j) {
-          const ayah_data = j.data
-          setText(ayah_data.text.arab)
+        if (j.data) {
+          setText(j.data.text.arab)
         } else {
           setText(("الْحَمْدُ لِلَّهِ الَّذِي خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ وَجَعَلَ الظُّلُمَاتِ وَالنُّورَ ۖ ثُمَّ الَّذِينَ كَفَرُوا بِرَبِّهِمْ يَعْدِلُونَ"))
         }
@@ -91,16 +90,18 @@ function Home() {
 
       <hr />
 
-      <p className="font-bold text-lg sm:text-2xl md:text-3xl text-white text-center my-16 p-2 bg-black mx-5 opacity-70 shadow-gray-500 shadow-sm rounded-xl md:mx-20 leading-10 lg:leading-loose">{Text}</p>
+      <p className="font-bold text-lg sm:text-2xl md:text-3xl text-white text-center my-16 p-4 bg-slate-800 opacity-70 shadow-gray-500 shadow-sm rounded-b-lg md:mx-20 leading-10 lg:leading-loose border-t-4">{Text}</p>
 
       <pre className="md:w-[95%] w-[100%] mb-20 mx-auto bg-slate-800 opacity-70 rounded-b-lg text-sm text-white"><code className="lang-json">
 
         <div className="flex items-end font-bold bg-[#444] border-b border-white">
-          <h1 className="p-3 px-4 text-lg  font-sans bg-white text-slate-800">Previews</h1>
-          <p onClick={(e) => setJuz(e.target)} className="py-2 border-t px-4 bg-slate-800 rounded-t-lg mx-2 cursor-pointer juz">Juz</p>
-          <p onClick={(e) => setSurah(e.target)} className="py-2 px-4 bg-slate-800 rounded-t-lg mr-2 cursor-pointer surah">Surah</p>
-          <p onClick={(e) => setAyah(e.target)} className="py-2 px-4 bg-slate-800 rounded-t-lg cursor-pointer ayah">Ayah</p>
-          <p onClick={(e) => setQuraa(e.target)} className="py-2 px-4 ml-2 bg-slate-800 rounded-t-lg cursor-pointer ayah">Quraa</p>
+          <h1 className="p-3 px-4 text-sm sm:text-lg font-sans bg-white text-slate-800">Previews</h1>
+          <div className="overflow-auto flex">
+            <p onClick={(e) => setJuz(e.target)} className="py-2 text-xs sm:text-md border-t px-4 bg-slate-800 rounded-t-lg mx-2 cursor-pointer juz">Juz</p>
+            <p onClick={(e) => setSurah(e.target)} className="py-2 text-xs sm:text-md px-4 bg-slate-800 rounded-t-lg mr-2 cursor-pointer surah">Surah</p>
+            <p onClick={(e) => setAyah(e.target)} className="py-2 text-xs sm:text-md px-4 bg-slate-800 rounded-t-lg cursor-pointer ayah">Ayah</p>
+            <p onClick={(e) => setQuraa(e.target)} className="py-2 text-xs sm:text-md px-4 mx-2 bg-slate-800 rounded-t-lg cursor-pointer ayah">Quraa</p>
+          </div>
         </div>
 
         {PreJuz == true && <Juz />}
@@ -132,7 +133,7 @@ function Home() {
         </div>
       </div>
       <hr />
-      <p className="font-bold text-lg sm:text-2xl md:text-3xl text-center mt-20"><i>"Login, Get Token, and Do Anything..."</i></p>
+      <p className="font-bold text-lg sm:text-2xl md:text-3xl text-center mt-20 text-green-500"><i>"Login, Get Token, and Do Anything..."</i></p>
     </div>
   );
 }

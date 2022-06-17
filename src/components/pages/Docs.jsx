@@ -11,9 +11,9 @@ function Docs() {
         <h3 className="mb-3">To getting an API you can graph the code below, parsing an <span className="font-bold">"endpoint"</span>, and <Link to="/login" className="text-green-500"><b><i>auth-token</i></b></Link> key in headers.</h3>
         <h3 className="mb-3">Base URL : </h3>
 
-        <pre className="mb-3 bg-slate-800 opacity-70 rounded-b-lg text-sm text-white"><code className="lang-javascript">
+        <pre className="mb-3 bg-slate-800 opacity-70 rounded-lg text-sm text-white"><code className="lang-javascript">
           <div className="overflow-auto p-2">
-            https://quran-rewayah-api.vercel.app/api/quran-rewayah
+            https://quran-rewayah-api.vercel.app/api
           </div>
         </code></pre>
 
@@ -21,7 +21,7 @@ function Docs() {
 
         <pre className="w-[100%] bg-slate-800 opacity-70 rounded-b-lg text-sm text-white"><code className="lang-javascript">
           <div className="flex items-end font-bold bg-[#444] border-b border-white">
-            <h1 className="p-2 px-4 text-md  font-sans bg-white text-slate-800">Javascript</h1>
+            <h1 className="p-2 px-4 text-md  font-sans bg-white text-slate-800">Javascript Fetch</h1>
           </div>
 
           <div className="overflow-auto p-2 m-2">
@@ -40,7 +40,7 @@ function Docs() {
 
         <pre className="w-[100%] bg-slate-800 opacity-70 rounded-b-lg text-sm text-white"><code className="lang-javascript">
           <div className="flex items-end font-bold bg-[#444] border-b border-white">
-            <h1 className="p-2 px-4 text-md  font-sans bg-white text-slate-800">Javascript</h1>
+            <h1 className="p-2 px-4 text-md  font-sans bg-white text-slate-800">Javascript Axios</h1>
           </div>
           <div className="overflow-auto p-2 m-2">
             <span className="hljs-keyword text-purple-500">const</span> <span className="text-orange-500">axios</span> = <span className="hljs-built_in text-purple-500">require</span>(<span className="hljs-string text-green-500">'axios'</span>); // node js<br />
@@ -77,11 +77,11 @@ function Docs() {
 
         <h2 id="juz" className="pt-20 mb-5 font-bold text-xl text-red-500"><div className="text-white inline mr-2">&bull;</div> Getting One Juz Of Quran</h2>
 
-        <h3 className="my-3">To get <b>One Juz of Quran</b> you can parsing a parameter <pre className="inline px-2 bg-slate-800 opacity-70 rounded-lg text-sm text-white"><code className="lang-javascript">/juz/{'<number-of-juz>'}</code></pre> on the base url.</h3>
+        <h3 className="my-3">To get <b>One Juz of Quran</b> you can parsing a parameter <pre className="inline px-2 bg-slate-800 opacity-70 rounded-lg text-sm text-white"><code className="lang-javascript">/quran-rewayah/juz/{'<number-of-juz>'}</code></pre> on the base url.</h3>
 
-        <pre className="mb-3 bg-slate-800 opacity-70 rounded-b-lg text-sm text-white"><code className="lang-javascript">
+        <pre className="mb-3 bg-slate-800 opacity-70 rounded-lg text-sm text-white"><code className="lang-javascript">
           <div className="overflow-auto p-2">
-            https://quran-rewayah-api.vercel.app/api/quran-rewayah<b className="text-red-500">/juz/2</b>
+            https://quran-rewayah-api.vercel.app/api<b className="text-red-500">/quran-rewayah/juz/2</b>
           </div>
         </code></pre>
 
@@ -90,7 +90,7 @@ function Docs() {
             <h1 className="p-2 px-4 text-md  font-sans bg-white text-slate-800">Javascript</h1>
           </div>
           <div className="overflow-auto p-2 m-2">
-            <span className="hljs-selector-tag text-orange-500">fetch</span>(<span className="hljs-string text-green-300">'https://quran-rewayah-api.vercel.app/api/quran-rewayah<b className="text-red-500">/juz/2</b>'</span>, <span>{'{'}</span><br />
+            <span className="hljs-selector-tag text-orange-500">fetch</span>(<span className="hljs-string text-green-300">'https://quran-rewayah-api.vercel.app/api<b className="text-red-500">/quran-rewayah/juz/2</b>'</span>, <span>{'{'}</span><br />
             <span className="ml-5 hljs-attribute text-purple-500">method</span>: <span className="hljs-string text-green-300">'GET'</span>,<br />
             <span className="ml-5 hljs-attribute text-purple-500">headers</span>: <span>{'{'}</span><br />
             <span className="ml-10 hljs-string text-green-300">'auth-token'</span>: <span className="hljs-string text-red-500">'&lt;your token&gt;'</span><br />
@@ -103,11 +103,11 @@ function Docs() {
 
         <h2 id="surah" className="pt-20 mb-5 font-bold text-xl text-red-500"><div className="text-white inline mr-2">&bull;</div> Getting All Surah Of Quran</h2>
 
-        <h3 className="my-3">To get <b>All Surah of Quran</b> you can parsing a parameter <pre className="inline px-2 bg-slate-800 opacity-70 rounded-lg text-sm text-white"><code className="lang-javascript">/surah</code></pre> on the base url.</h3>
+        <h3 className="my-3">To get <b>All Surah of Quran</b> you can parsing a parameter <pre className="inline px-2 bg-slate-800 opacity-70 rounded-lg text-sm text-white"><code className="lang-javascript">/quran-rewayah/surah</code></pre> on the base url.</h3>
 
-        <pre className="mb-3 bg-slate-800 opacity-70 rounded-b-lg text-sm text-white"><code className="lang-javascript">
+        <pre className="mb-3 bg-slate-800 opacity-70 rounded-lg text-sm text-white"><code className="lang-javascript">
           <div className="overflow-auto p-2">
-            https://quran-rewayah-api.vercel.app/api/quran-rewayah<b className="text-red-500">/surah</b>
+            https://quran-rewayah-api.vercel.app/api<b className="text-red-500">/quran-rewayah/surah</b>
           </div>
         </code></pre>
 
@@ -116,7 +116,7 @@ function Docs() {
             <h1 className="p-2 px-4 text-md  font-sans bg-white text-slate-800">Javascript</h1>
           </div>
           <div className="overflow-auto p-2 m-2">
-            <span className="hljs-selector-tag text-orange-500">fetch</span>(<span className="hljs-string text-green-300">'https://quran-rewayah-api.vercel.app/api/quran-rewayah<b className="text-red-500">/surah</b>'</span>, <span>{'{'}</span><br />
+            <span className="hljs-selector-tag text-orange-500">fetch</span>(<span className="hljs-string text-green-300">'https://quran-rewayah-api.vercel.app/api<b className="text-red-500">/quran-rewayah/surah</b>'</span>, <span>{'{'}</span><br />
             <span className="ml-5 hljs-attribute text-purple-500">method</span>: <span className="hljs-string text-green-300">'GET'</span>,<br />
             <span className="ml-5 hljs-attribute text-purple-500">headers</span>: <span>{'{'}</span><br />
             <span className="ml-10 hljs-string text-green-300">'auth-token'</span>: <span className="hljs-string text-red-500">'&lt;your token&gt;'</span><br />
@@ -129,11 +129,11 @@ function Docs() {
 
         <h2 id="onesurah" className="pt-20 mb-5 font-bold text-xl text-red-500"><div className="text-white inline mr-2">&bull;</div> Getting One Surah Of Quran</h2>
 
-        <h3 className="my-3">To get <b>One Surah of Quran</b> you can parsing a parameter <pre className="inline px-2 bg-slate-800 opacity-70 rounded-lg text-sm text-white"><code className="lang-javascript">/surah/{'<number-of-surah>'}</code></pre> on the base url.</h3>
+        <h3 className="my-3">To get <b>One Surah of Quran</b> you can parsing a parameter <pre className="inline px-2 bg-slate-800 opacity-70 rounded-lg text-sm text-white"><code className="lang-javascript">/quran-rewayah/surah/{'<number-of-surah>'}</code></pre> on the base url.</h3>
 
-        <pre className="mb-3 bg-slate-800 opacity-70 rounded-b-lg text-sm text-white"><code className="lang-javascript">
+        <pre className="mb-3 bg-slate-800 opacity-70 rounded-lg text-sm text-white"><code className="lang-javascript">
           <div className="overflow-auto p-2">
-            https://quran-rewayah-api.vercel.app/api/quran-rewayah<b className="text-red-500">/surah/2</b>
+            https://quran-rewayah-api.vercel.app/api<b className="text-red-500">/quran-rewayah/surah/2</b>
           </div>
         </code></pre>
 
@@ -142,7 +142,7 @@ function Docs() {
             <h1 className="p-2 px-4 text-md  font-sans bg-white text-slate-800">Javascript</h1>
           </div>
           <div className="overflow-auto p-2 m-2">
-            <span className="hljs-selector-tag text-orange-500">fetch</span>(<span className="hljs-string text-green-300">'https://quran-rewayah-api.vercel.app/api/quran-rewayah<b className="text-red-500">/surah/2</b>'</span>, <span>{'{'}</span><br />
+            <span className="hljs-selector-tag text-orange-500">fetch</span>(<span className="hljs-string text-green-300">'https://quran-rewayah-api.vercel.app/api<b className="text-red-500">/quran-rewayah/surah/2</b>'</span>, <span>{'{'}</span><br />
             <span className="ml-5 hljs-attribute text-purple-500">method</span>: <span className="hljs-string text-green-300">'GET'</span>,<br />
             <span className="ml-5 hljs-attribute text-purple-500">headers</span>: <span>{'{'}</span><br />
             <span className="ml-10 hljs-string text-green-300">'auth-token'</span>: <span className="hljs-string text-red-500">'&lt;your token&gt;'</span><br />
@@ -159,13 +159,13 @@ function Docs() {
 
         <pre className="inline px-2 bg-slate-800 opacity-70 rounded-lg text-sm text-white"><code className="lang-javascript">
           <div className="overflow-auto p-2">
-            /ayah/{'<number-of-ayah>?surah=<number-of-surah>'}
+            /quran-rewayah/ayah/{'<number-of-ayah>?surah=<number-of-surah>'}
           </div>
         </code></pre>
 
-        <pre className="my-3 bg-slate-800 opacity-70 rounded-b-lg text-sm text-white"><code className="lang-javascript">
+        <pre className="my-3 bg-slate-800 opacity-70 rounded-lg text-sm text-white"><code className="lang-javascript">
           <div className="overflow-auto p-2">
-            https://quran-rewayah-api.vercel.app/api/quran-rewayah<b className="text-red-500">/ayah/2?surah=7</b>
+            https://quran-rewayah-api.vercel.app/api<b className="text-red-500">/quran-rewayah/ayah/2?surah=7</b>
           </div>
         </code></pre>
 
@@ -174,7 +174,67 @@ function Docs() {
             <h1 className="p-2 px-4 text-md  font-sans bg-white text-slate-800">Javascript</h1>
           </div>
           <div className="overflow-auto p-2 m-2">
-            <span className="hljs-selector-tag text-orange-500">fetch</span>(<span className="hljs-string text-green-300">'https://quran-rewayah-api.vercel.app/api/quran-rewayah<b className="text-red-500">/ayah/2?surah=7</b>'</span>, <span>{'{'}</span><br />
+            <span className="hljs-selector-tag text-orange-500">fetch</span>(<span className="hljs-string text-green-300">'https://quran-rewayah-api.vercel.app/api<b className="text-red-500">/quran-rewayah/ayah/2?surah=7</b>'</span>, <span>{'{'}</span><br />
+            <span className="ml-5 hljs-attribute text-purple-500">method</span>: <span className="hljs-string text-green-300">'GET'</span>,<br />
+            <span className="ml-5 hljs-attribute text-purple-500">headers</span>: <span>{'{'}</span><br />
+            <span className="ml-10 hljs-string text-green-300">'auth-token'</span>: <span className="hljs-string text-red-500">'&lt;your token&gt;'</span><br />
+            <span className="ml-5">{'}'}</span><br />
+            {'}'})<br />
+            <span className="hljs-selector-class ml-5 text-yellow-500">.then</span>(<span className="text-purple-500">res</span> =&gt; <span className="text-purple-500">res</span>.<span className="text-yellow-500">json</span>())<br />
+            <span className="hljs-selector-class ml-5 text-yellow-500">.then</span>(<span className="text-purple-500">result</span> =&gt; console.<span className="text-yellow-500">log</span>(<span className="text-purple-500">result</span>))
+          </div>
+        </code></pre>
+
+
+        <h2 id="quraa" className="pt-20 mb-5 font-bold text-xl text-red-500"><div className="text-white inline mr-2">&bull;</div> Getting Quraa Of Rewayah 7</h2>
+
+        <h3 className="my-3">To get <b>Quraa Of Rewayah 7</b> you can parsing a parameter on the base url.</h3>
+
+        <pre className="mb-3 bg-slate-800 opacity-70 rounded-lg text-sm text-white"><code className="lang-javascript">
+          <div className="overflow-auto p-2">
+            https://quran-rewayah-api.vercel.app/api<b className="text-red-500">/quraa/qari</b>
+          </div>
+        </code></pre>
+
+        <pre className="w-[100%] bg-slate-800 opacity-70 rounded-b-lg text-sm text-white"><code className="lang-javascript">
+          <div className="flex items-end font-bold bg-[#444] border-b border-white">
+            <h1 className="p-2 px-4 text-md  font-sans bg-white text-slate-800">Javascript</h1>
+          </div>
+          <div className="overflow-auto p-2 m-2">
+            <span className="hljs-selector-tag text-orange-500">fetch</span>(<span className="hljs-string text-green-300">'https://quran-rewayah-api.vercel.app/api<b className="text-red-500">/quraa/qari</b>'</span>, <span>{'{'}</span><br />
+            <span className="ml-5 hljs-attribute text-purple-500">method</span>: <span className="hljs-string text-green-300">'GET'</span>,<br />
+            <span className="ml-5 hljs-attribute text-purple-500">headers</span>: <span>{'{'}</span><br />
+            <span className="ml-10 hljs-string text-green-300">'auth-token'</span>: <span className="hljs-string text-red-500">'&lt;your token&gt;'</span><br />
+            <span className="ml-5">{'}'}</span><br />
+            {'}'})<br />
+            <span className="hljs-selector-class ml-5 text-yellow-500">.then</span>(<span className="text-purple-500">res</span> =&gt; <span className="text-purple-500">res</span>.<span className="text-yellow-500">json</span>())<br />
+            <span className="hljs-selector-class ml-5 text-yellow-500">.then</span>(<span className="text-purple-500">result</span> =&gt; console.<span className="text-yellow-500">log</span>(<span className="text-purple-500">result</span>))
+          </div>
+        </code></pre>
+
+
+        <h2 id="quraa" className="pt-20 mb-5 font-bold text-xl text-red-500"><div className="text-white inline mr-2">&bull;</div> Getting One Qari Of Rewayah 7</h2>
+
+        <h3 className="my-3">To get <b>One Qari Of Rewayah 7</b> you can parsing a parameters and specify index of qari on the base url.</h3>
+
+        <pre className="inline px-2 bg-slate-800 opacity-70 rounded-lg text-sm text-white"><code className="lang-javascript">
+          <div className="overflow-auto p-2">
+            /quraa/qari/{'<number-of-qari>'}
+          </div>
+        </code></pre>
+
+        <pre className="my-3 bg-slate-800 opacity-70 rounded-lg text-sm text-white"><code className="lang-javascript">
+          <div className="overflow-auto p-2">
+            https://quran-rewayah-api.vercel.app/api<b className="text-red-500">/quraa/qari/3</b>
+          </div>
+        </code></pre>
+
+        <pre className="w-[100%] bg-slate-800 opacity-70 rounded-b-lg text-sm text-white"><code className="lang-javascript">
+          <div className="flex items-end font-bold bg-[#444] border-b border-white">
+            <h1 className="p-2 px-4 text-md  font-sans bg-white text-slate-800">Javascript</h1>
+          </div>
+          <div className="overflow-auto p-2 m-2">
+            <span className="hljs-selector-tag text-orange-500">fetch</span>(<span className="hljs-string text-green-300">'https://quran-rewayah-api.vercel.app/api<b className="text-red-500">/quraa/qari/3</b>'</span>, <span>{'{'}</span><br />
             <span className="ml-5 hljs-attribute text-purple-500">method</span>: <span className="hljs-string text-green-300">'GET'</span>,<br />
             <span className="ml-5 hljs-attribute text-purple-500">headers</span>: <span>{'{'}</span><br />
             <span className="ml-10 hljs-string text-green-300">'auth-token'</span>: <span className="hljs-string text-red-500">'&lt;your token&gt;'</span><br />
@@ -186,14 +246,16 @@ function Docs() {
         </code></pre>
 
       </div>
-      <div className="flex flex-col md:ml-5 pb-20 -mt-24">
-        <h1 className="font-semibold text-2xl mb-2 mt-52 pr-5 py-3 border-y border-slate-400 text-white">Navigation :</h1>
+      <div className="hidden md:flex flex-col md:ml-5 pb-20 -mt-24">
+        <h1 className="font-semibold text-2xl mb-2 mt-52 pr-5 py-3 border-y border-slate-400 text-green-500">Navigations :</h1>
         <a href="#started" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">Get Started</a>
         <a href="#token" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">Get Token</a>
         <a href="#juz" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">One Juz Of Quran</a>
         <a href="#surah" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">All Surah Of Quran</a>
         <a href="#onesurah" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">One Surah Of Quran</a>
         <a href="#oneayah" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">One Ayah Of Surah</a>
+        <a href="#quraa" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">Quraa Of Rewayah 7</a>
+        <a href="#oneqari" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">One Quraa Of Rewayah 7</a>
       </div>
     </div>
   );

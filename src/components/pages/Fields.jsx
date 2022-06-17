@@ -292,7 +292,7 @@ const Fields = () => {
       ]
   }
 
-  const api = import.meta.env.VITE_URL
+  const api = import.meta.env.VITE_QURAN
   const token = import.meta.env.VITE_TOKEN
 
   const addAyah = async () => {
