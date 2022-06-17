@@ -56,7 +56,7 @@ function Quraa() {
             (dataQuraa !== null) && quraa[2].map((qari, i) => {
               return (
                 <>
-                  <h2 id={qari.id} className="pt-20 mb-5 text-right font-bold text-xl text-red-500" key={i}> {qari.name} <div className="text-white inline mx-2">&bull;</div></h2>
+                  <h2 id={qari.id} className="pt-20 mb-5 text-right font-bold text-xl text-red-500" key={qari._id}> {qari.name} <div className="text-white inline mx-2">&bull;</div></h2>
 
                   <div className="flex flex-col mr-10 text-right pb-10">
                     <h3 className="text-lg text-white my-3">اسمه</h3>
