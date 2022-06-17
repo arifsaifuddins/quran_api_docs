@@ -133,7 +133,7 @@ function Login() {
   return (
     <div className="flex flex-col items-center mx-auto w-[100%] sm:w-[700px] mb-20 font-[tajawal]">
       <h1 className="md:text-5xl text-4xl mt-10 mb-20  font-bold">User Login</h1>
-      <form className="w-[100%] px-4 sm:px-20">
+      <form className="w-[100%] px-4 sm:px-20 font-[arial]">
         {
           (Errored == true) && <div className="text-md md:text-xl w-[100%] bg-slate-500 py-2 px-3 font-bold mb-4 rounded-xl text-white flex justify-between items-center">
             <div>{Error}</div>
@@ -158,7 +158,7 @@ function Login() {
           }} className=" hover:text-red-700 text-red-500 ml-2 font-bold"><i className="fas fa-arrow-right-from-bracket"></i> Log Out?</Link></h1> : <h1 className="pb-3 text-lg md:text-xl text-red-500">You're not logged in!</h1>
         }
         <hr />
-        <div className="flex mt-3">
+        <div className="flex mt-3 font-[arial]">
           <input type="text" placeholder="Your Token here, Login!" defaultValue={Token} className="token bg-transparent text-white py-2 px-3 rounded-xl text-lg  border outline-none border-slate-400 w-[100%]" />
           <i onClick={() => copyToken()} className="fas hover:bg-red-700 bg-red-500 text-white font-bold py-2 cursor-pointer px-3 rounded-xl text-lg ml-2 fa-copy"></i>
         </div>

@@ -375,15 +375,15 @@ const Fields = () => {
   }
 
   return (
-    <div className="flex flex-col px-4 font-[tajawal]">
+    <div className="flex flex-col px-4 font-[arial]">
       <div className="flex items-center justify-around mx-auto my-14">
         <img src="./icon/quran.png" alt="icon" className="w-12 sm:w-16 lg:w-24" />
-        <h1 className="lg:text-6xl md:text-5xl text-4xl ml-4 font-bold">Quran <span className="text-red-500">Admin</span></h1>
+        <h1 className="font-[tajawal] lg:text-6xl md:text-5xl text-4xl ml-4 font-bold">Quran <span className="text-red-500">Admin</span></h1>
       </div>
 
       <div className="flex flex-col mx-auto mt-8 mb-32 lg:w-[900px] w-full lg:px-0 sm:px-20 md:px-28">
         {
-          (Errored == true) && <div className="text-xl bg-slate-500 py-2 px-3 font-bold mb-4 rounded-xl text-white flex justify-between items-center">
+          (Errored == true) && <div className="text-xl bg-slate-500 py-2 px-3 lg:mx-4 font-bold mb-4 rounded-xl text-white flex justify-between items-center">
             <div>{Error}</div>
             <button onClick={() => setErrored(false)} className="text-black hover:text-red-500 text-2xl font-bold">&times;</button>
           </div>
@@ -417,7 +417,7 @@ const Fields = () => {
                 return (
                   <div className={`flex flex-col w-[100%] ${qari}`} key={i}>
                     <div className="flex justify-between text-white text-xl font-bold mt-3 border-b pb-3">
-                      <label>&bull; {`Imam ${qari} :`}</label>
+                      <label className="font-[tajawal]">&bull; {`Imam ${qari} :`}</label>
                       <button onClick={() => addInput(qari)} className="rounded-full font-bold hover:bg-red-700 bg-red-500 w-12 text-center">+</button>
                     </div>
                   </div>
@@ -431,7 +431,7 @@ const Fields = () => {
                 return (
                   <div className={`flex flex-col w-[100%] ${qari}`} key={i}>
                     <div className="flex justify-between text-white text-xl font-bold mt-3 border-b pb-3">
-                      <label>&bull; {`Imam ${qari} :`}</label>
+                      <label className="font-[tajawal]">&bull; {`Imam ${qari} :`}</label>
                       <button onClick={() => addInput(qari)} className="rounded-full font-bold hover:bg-red-700 bg-red-500 w-12 text-center">+</button>
                     </div>
                   </div>

@@ -62,7 +62,7 @@ function About() {
           <p className="mt-4 font-bold text-[#ebebeb] lg:text-lg">Hello Everybody!...</p>
           <p className="mt-6 lg:text-lg first-letter:ml-10">This is an API for <span className="text-green-500">Seven Rewayah of Quran Kareem</span>, this made couse i haven't see someone create an API like this, then i am starting to think if i can make it as API for anyone can get it easly. I am named it <span className="text-red-500 font-bold italic">"Quran Rewayah 7"</span>, couse the API provide all of seven rewayah on quran rightly.</p>
           <p className="mt-6 lg:text-lg first-letter:ml-10">So, i am <a className="text-green-500" href="https://github.com/saifuddien">Arief Saifuddien</a> from Jepara, Indonesia. I am a Student for <span className="font-bold text-[#ebebeb] italic">Islamic Studies</span> at International University of Africa Sudan <a href="https://iua.edu.sd" className="text-green-500 ">(IUA)</a>. I am made it actually not alone, but with my friend <a className="text-green-500" href="https://github.com/Toyin5">Muhammad Toyin</a> from Lagos, Nigeria. He is a Student for <span className="font-bold text-[#ebebeb] italic">Computer Science</span> at <a href="https://iua.edu.sd" className="text-green-500 ">(IUA)</a> too.</p>
-          <p className="mt-6 font-bold text-[#ebebeb] italic lg:text-lg">Thanks for visitting us!. Give us start, and support us for anything...</p>
+          <p className="mt-6 font-bold text-[#ebebeb] italic lg:text-lg">Thanks for visitting us!. Give us star, and support us for anything...</p>
         </div>
         <div className="flex flex-col">
           <h1 className="font-semibold text-2xl pr-4 mb-2 pb-3 border-b border-slate-400 text-white" >API Made With :</h1>
@@ -80,7 +80,7 @@ function About() {
         <h1 className="font-semibold md:text-center text-2xl mb-5 pb-5 border-b border-slate-400 text-white">API Members :</h1>
         <div className="flex justify-between pt-10 md:px-4 items-center flex-col lg:flex-row md:flex-col">
           <div className="flex items-center my-8 text-xs sm:text-base">
-            <img src="/images/arief.jpg" className="border-2 border-[#ebebeb] w-40 h-40 rounded-full mr-4 md:mr-10 lg:mr-4" alt="Arief Photo" />
+            <img src="https://avatars.githubusercontent.com/u/87503629?v=4" className="border-2 border-[#ebebeb] w-40 h-40 rounded-full mr-4 md:mr-10 lg:mr-4" alt="Arief Photo" />
             <div className="flex flex-col">
               <h1 className="text-xl font-bold text-[#ebebeb] border-b border-slate-400 mb-2">Arief Saifuddien <a className="font-thin" target="_blank" href="https://github.com/saifuddien"><i className="mr-2 fab fa-github"></i></a></h1>
               <p className="text-white"><i className="mr-2 mt-2 fas  fa-briefcase"></i> API Founder</p>
@@ -90,7 +90,7 @@ function About() {
             </div>
           </div>
           <div className="flex items-center mt-8 text-xs sm:text-base">
-            <img src="/images/toyin.jpg" className="border-2 border-[#ebebeb] w-40 h-40 rounded-full mr-4 md:mr-10 lg:mr-4" alt="Toyin Photo" />
+            <img src="https://avatars.githubusercontent.com/u/40214690?v=4" className="border-2 border-[#ebebeb] w-40 h-40 rounded-full mr-4 md:mr-10 lg:mr-4" alt="Toyin Photo" />
             <div className="flex flex-col">
               <h1 className="text-xl font-bold text-[#ebebeb] border-b border-slate-400 mb-2">Muhammad Toyin <a className="font-thin" target="_blank" href="https://github.com/Toyin5"><i className="fab fa-github"></i></a></h1>
               <p className="text-white"><i className="mr-2 mt-2 fas  fa-briefcase"></i> API Co Founder</p>
@@ -106,7 +106,7 @@ function About() {
         <h1 className="font-semibold md:text-center text-2xl mb-5 pb-5 border-b border-slate-400 text-white">Contact Us :</h1>
 
         <div className="flex justify-between w-[100%] py-10 px-5 flex-col md:flex-row items-center">
-          <form className="md:w-[60%] sm:mx-20 md:mx-0 mb-20 md:mb-0">
+          <form className="md:w-[60%] sm:mx-20 md:mx-0 mb-20 md:mb-0 font-[arial]">
             {
               (Errored == true) && <div className="text-xl w-[100%] bg-slate-500 py-2 px-3 font-bold mb-4 rounded-xl text-white flex justify-between items-center">
                 <div>{Error}</div>
