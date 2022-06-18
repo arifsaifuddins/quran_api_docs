@@ -4,11 +4,6 @@
 
 @layer base {
 
-  body {
-    background-image: url('./public/images/bg.jpg');
-    background-attachment: fixed;
-  }
-
   *::selection {
     @apply text-white bg-green-300
   }
