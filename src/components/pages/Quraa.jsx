@@ -5,7 +5,7 @@ function Quraa() {
 
   const [dataQuraa, setdataQuraa] = useState(null)
 
-  const url_media = import.meta.env.VITE_MEDIA
+  const url_media = import.meta.env.VITE_URL
   const token = import.meta.env.VITE_TOKEN
   const quraa_url = import.meta.env.VITE_QURAA
 
@@ -28,7 +28,12 @@ function Quraa() {
   }
 
   const downloadFile = async (e) => {
-    await fetch(`${url_media}/${e}`)
+    await fetch(`${url_media}/${e}`, {
+      headers: {
+        'Accept': 'application/pdf',
+        'Content-Type': 'application/pdf',
+      }
+    })
       .then(r => r.blob())
       .then(j => {
 
@@ -58,7 +63,7 @@ function Quraa() {
                 <>
                   <h2 id={qari.id} className="pt-20 mb-5 text-right font-bold text-xl text-red-500" key={qari._id}> {qari.name} <div className="text-white inline mx-2">&bull;</div></h2>
 
-                  <div className="flex flex-col mr-10 text-right pb-10">
+                  <div key={qari._id} className="flex flex-col mr-10 text-right pb-10">
                     <h3 className="text-lg text-white my-3">اسمه</h3>
                     <p className="mb-2">{dataQuraa[i].qari.full_name}</p>
                     <h3 className="text-lg text-white my-3">حياته</h3>
