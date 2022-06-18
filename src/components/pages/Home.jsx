@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Juz, Surah, Ayah, Quraa } from './Previews'
+import { Juz, Surah, Ayah } from './Previews'
 
 function Home() {
 
   const [PreJuz, setPreJuz] = useState(true)
   const [PreSurah, setPreSurah] = useState(false)
   const [PreAyah, setPreAyah] = useState(false)
-  const [PreQuraa, setPreQuraa] = useState(false)
+  // const [PreQuraa, setPreQuraa] = useState(false)
   const [Text, setText] = useState("الْحَمْدُ لِلَّهِ الَّذِي خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ وَجَعَلَ الظُّلُمَاتِ وَالنُّورَ ۖ ثُمَّ الَّذِينَ كَفَرُوا بِرَبِّهِمْ يَعْدِلُونَ")
 
   useEffect(() => {
@@ -33,49 +33,49 @@ function Home() {
     e.classList.add('border-t')
     e.nextElementSibling.classList.remove('border-t')
     e.nextElementSibling.nextElementSibling.classList.remove('border-t')
-    e.nextElementSibling.nextElementSibling.nextElementSibling.classList.remove('border-t')
+    // e.nextElementSibling.nextElementSibling.nextElementSibling.classList.remove('border-t')
 
     setPreJuz(true)
     setPreSurah(false)
     setPreAyah(false)
-    setPreQuraa(false)
+    // setPreQuraa(false)
   }
 
   const setSurah = (e) => {
     e.classList.add('border-t')
     e.previousElementSibling.classList.remove('border-t')
     e.nextElementSibling.classList.remove('border-t')
-    e.nextElementSibling.nextElementSibling.classList.remove('border-t')
+    // e.nextElementSibling.nextElementSibling.classList.remove('border-t')
 
     setPreJuz(false)
     setPreSurah(true)
     setPreAyah(false)
-    setPreQuraa(false)
+    // setPreQuraa(false)
   }
 
   const setAyah = (e) => {
     e.classList.add('border-t')
     e.previousElementSibling.previousElementSibling.classList.remove('border-t')
     e.previousElementSibling.classList.remove('border-t')
-    e.nextElementSibling.classList.remove('border-t')
+    // e.nextElementSibling.classList.remove('border-t')
 
     setPreJuz(false)
     setPreSurah(false)
     setPreAyah(true)
-    setPreQuraa(false)
+    // setPreQuraa(false)
   }
 
-  const setQuraa = (e) => {
-    e.classList.add('border-t')
-    e.previousElementSibling.previousElementSibling.previousElementSibling.classList.remove('border-t')
-    e.previousElementSibling.previousElementSibling.classList.remove('border-t')
-    e.previousElementSibling.classList.remove('border-t')
+  // const setQuraa = (e) => {
+  //   e.classList.add('border-t')
+  //   e.previousElementSibling.previousElementSibling.previousElementSibling.classList.remove('border-t')
+  //   e.previousElementSibling.previousElementSibling.classList.remove('border-t')
+  //   e.previousElementSibling.classList.remove('border-t')
 
-    setPreJuz(false)
-    setPreSurah(false)
-    setPreAyah(false)
-    setPreQuraa(true)
-  }
+  //   setPreJuz(false)
+  //   setPreSurah(false)
+  //   setPreAyah(false)
+  //   setPreQuraa(true)
+  // }
 
   return (
     <div className="flex flex-col w-[100%] lg:w-[1000px] mx-auto mb-20 p-4 font-[tajawal]">
@@ -100,14 +100,14 @@ function Home() {
             <p onClick={(e) => setJuz(e.target)} className="py-2 text-xs sm:text-md border-t px-4 bg-slate-800 rounded-t-lg mx-2 cursor-pointer juz">Juz</p>
             <p onClick={(e) => setSurah(e.target)} className="py-2 text-xs sm:text-md px-4 bg-slate-800 rounded-t-lg mr-2 cursor-pointer surah">Surah</p>
             <p onClick={(e) => setAyah(e.target)} className="py-2 text-xs sm:text-md px-4 bg-slate-800 rounded-t-lg cursor-pointer ayah">Ayah</p>
-            <p onClick={(e) => setQuraa(e.target)} className="py-2 text-xs sm:text-md px-4 mx-2 bg-slate-800 rounded-t-lg cursor-pointer ayah">Quraa</p>
+            {/* <p onClick={(e) => setQuraa(e.target)} className="py-2 text-xs sm:text-md px-4 mx-2 bg-slate-800 rounded-t-lg cursor-pointer ayah">Quraa</p> */}
           </div>
         </div>
 
         {PreJuz == true && <Juz />}
         {PreSurah == true && <Surah />}
         {PreAyah == true && <Ayah />}
-        {PreQuraa == true && <Quraa />}
+        {/* {PreQuraa == true && <Quraa />} */}
       </code></pre>
 
       <hr />

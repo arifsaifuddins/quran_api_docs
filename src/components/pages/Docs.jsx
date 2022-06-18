@@ -186,7 +186,7 @@ function Docs() {
         </code></pre>
 
 
-        <h2 id="quraa" className="pt-20 mb-5 font-bold text-xl text-red-500"><div className="text-white inline mr-2">&bull;</div> Getting Quraa Of Rewayah 7</h2>
+        {/* <h2 id="quraa" className="pt-20 mb-5 font-bold text-xl text-red-500"><div className="text-white inline mr-2">&bull;</div> Getting Quraa Of Rewayah 7</h2>
 
         <h3 className="my-3">To get <b>Quraa Of Rewayah 7</b> you can parsing a parameter on the base url.</h3>
 
@@ -243,7 +243,7 @@ function Docs() {
             <span className="hljs-selector-class ml-5 text-yellow-500">.then</span>(<span className="text-purple-500">res</span> =&gt; <span className="text-purple-500">res</span>.<span className="text-yellow-500">json</span>())<br />
             <span className="hljs-selector-class ml-5 text-yellow-500">.then</span>(<span className="text-purple-500">result</span> =&gt; console.<span className="text-yellow-500">log</span>(<span className="text-purple-500">result</span>))
           </div>
-        </code></pre>
+        </code></pre> */}
 
       </div>
       <div className="hidden md:flex flex-col md:ml-5 pb-20 -mt-24">
@@ -254,8 +254,8 @@ function Docs() {
         <a href="#surah" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">All Surah Of Quran</a>
         <a href="#onesurah" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">One Surah Of Quran</a>
         <a href="#oneayah" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">One Ayah Of Surah</a>
-        <a href="#quraa" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">Quraa Of Rewayah 7</a>
-        <a href="#oneqari" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">One Quraa Of Rewayah 7</a>
+        {/* <a href="#quraa" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">Quraa Of Rewayah 7</a>
+        <a href="#oneqari" className=" mt-5 hover:text-white text-lg md:text-sm lg:text-lg">One Quraa Of Rewayah 7</a> */}
       </div>
     </div>
   );

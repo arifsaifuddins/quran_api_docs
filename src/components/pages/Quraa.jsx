@@ -5,7 +5,7 @@ function Quraa() {
 
   const [dataQuraa, setdataQuraa] = useState(null)
 
-  const url_media = import.meta.env.VITE_URL
+  // const url_media = import.meta.env.VITE_URL
   const token = import.meta.env.VITE_TOKEN
   const quraa_url = import.meta.env.VITE_QURAA
 
@@ -27,29 +27,29 @@ function Quraa() {
       })
   }
 
-  const downloadFile = async (e) => {
-    await fetch(`${url_media}/${e}`, {
-      headers: {
-        'Accept': 'application/pdf',
-        'Content-Type': 'application/pdf',
-      }
-    })
-      .then(r => r.blob())
-      .then(j => {
+  // const downloadFile = async (e) => {
+  //   await fetch(`${url_media}/${e}`, {
+  //     headers: {
+  //       'Accept': 'application/pdf',
+  //       'Content-Type': 'application/pdf',
+  //     }
+  //   })
+  //     .then(r => r.blob())
+  //     .then(j => {
 
-        let url = URL.createObjectURL(j)
-        let a = document.createElement('a')
+  //       let url = URL.createObjectURL(j)
+  //       let a = document.createElement('a')
 
-        a.href = url
-        a.download = e.replace(/^.*[\\\/\-]/, '')
+  //       a.href = url
+  //       a.download = e.replace(/^.*[\\\/\-]/, '')
 
-        document.body.appendChild(a)
-        a.click()
-        a.remove()
+  //       document.body.appendChild(a)
+  //       a.click()
+  //       a.remove()
 
-        URL.revokeObjectURL(url)
-      })
-  }
+  //       URL.revokeObjectURL(url)
+  //     })
+  // }
 
   return (
     <div className="flex justify-between px-4 -mt-4 mx-auto w-[100%] lg:w-[1000px] flex-col md:flex-row font-[tajawal]">
@@ -60,10 +60,10 @@ function Quraa() {
           {
             (dataQuraa !== null) && quraa[2].map((qari, i) => {
               return (
-                <>
-                  <h2 id={qari.id} className="pt-20 mb-5 text-right font-bold text-xl text-red-500" key={qari._id}> {qari.name} <div className="text-white inline mx-2">&bull;</div></h2>
+                <div key={qari._id}>
+                  <h2 id={qari.id} className="pt-20 mb-5 text-right font-bold text-xl text-red-500" > {qari.name} <div className="text-white inline mx-2">&bull;</div></h2>
 
-                  <div key={qari._id} className="flex flex-col mr-10 text-right pb-10">
+                  <div className="flex flex-col mr-10 text-right pb-10">
                     <h3 className="text-lg text-white my-3">اسمه</h3>
                     <p className="mb-2">{dataQuraa[i].qari.full_name}</p>
                     <h3 className="text-lg text-white my-3">حياته</h3>
@@ -72,10 +72,10 @@ function Quraa() {
                     <p className="mb-2">{dataQuraa[i].his_shekh}</p>
                     <h3 className="text-lg text-white my-3">تلاميذه</h3>
                     <p className="mb-2">{dataQuraa[i].his_students}</p>
-                    {
+                    {/* {
                       dataQuraa[i].usul_pdf && <> <h3 className="text-lg text-white my-3">أصوله</h3>
                         <p className="px-4 bg-purple-500 font-bold hover:bg-purple-800 cursor-pointer w-max self-end rounded-full font-sans text-white py-1 mb-2" onClick={() => downloadFile(dataQuraa[i].usul_pdf)}>Download Usul 4MB</p></>
-                    }
+                    } */}
                     <h3 className="text-lg text-white my-3">راوياه :<span className='text-red-500'> {dataQuraa[i].rowi[0].rowi1.name1} <span className='text-white'>و</span>{dataQuraa[i].rowi[1].rowi2.name2}</span></h3>
 
                     <h4 className="text-lg text-white my-3 py-2 px-4 bg-green-500 w-max self-end rounded-xl">{dataQuraa[i].rowi[0].rowi1.name1}</h4>
@@ -86,10 +86,10 @@ function Quraa() {
                     <p className="mb-2 mr-3">{dataQuraa[i].rowi[0].his_shekh1}</p>
                     <h4 className="text-lg text-white my-3 mr-3">تلاميذه</h4>
                     <p className="mb-4 mr-3">{dataQuraa[i].rowi[0].his_students1}</p>
-                    {
+                    {/* {
                       dataQuraa[i].rowi[0].usul_pdf1 && <> <h3 className="text-lg text-white my-3">أصوله</h3>
                         <p className="px-4 bg-purple-500 font-bold hover:bg-purple-800 cursor-pointer w-max self-end rounded-full font-sans text-white py-1 mb-2" onClick={() => downloadFile(dataQuraa[i].rowi[0].usul_pdf1)}>Download Usul 2.5MB</p></>
-                    }
+                    } */}
 
                     <h4 className="text-lg text-white my-3 py-2 px-4 bg-green-500 w-max self-end rounded-xl">{dataQuraa[i].rowi[1].rowi2.name2}</h4>
                     <p className="mb-2 mr-3">{dataQuraa[i].rowi[1].rowi2.full_name2}</p>
@@ -99,13 +99,13 @@ function Quraa() {
                     <p className="mb-2 mr-3 ">{dataQuraa[i].rowi[1].his_shekh2}</p>
                     <h4 className="text-lg text-white my-3 mr-3">تلاميذه</h4>
                     <p className="mb-2 mr-3">{dataQuraa[i].rowi[1].his_students2}</p>
-                    {
+                    {/* {
                       dataQuraa[i].rowi[1].usul_pdf2 && <><h3 className="text-lg text-white my-3">أصوله</h3>
                         <p className="px-4 bg-purple-500 font-bold hover:bg-purple-800 cursor-pointer w-max self-end rounded-full font-sans text-white py-1 mb-2" onClick={() => downloadFile(dataQuraa[i].rowi[1].usul_pdf2)}>Download Usul 3MB</p></>
-                    }
+                    } */}
                   </div>
                   <hr />
-                </>
+                </div>
               )
             })
           }{(dataQuraa == null) && <div className="my-20 text-center text-2xl font-thin">Loading Data...</div>}
