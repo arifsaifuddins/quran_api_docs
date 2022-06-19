@@ -203,11 +203,11 @@ const Fields = () => {
           rowi: [
             {
               name: "قنبل",
-              qiraah: Qunbul
+              qiraah: Qunbul || 'Same with Hafs'
             },
             {
               name: "البزي",
-              qiraah: Bazzi
+              qiraah: Bazzi || 'Same with Hafs'
             }
           ]
         },
@@ -216,11 +216,11 @@ const Fields = () => {
           rowi: [
             {
               name: "هشام",
-              qiraah: Hisham
+              qiraah: Hisham || 'Same with Hafs'
             },
             {
               name: "ابن ذكوان",
-              qiraah: IbnDzakwan
+              qiraah: IbnDzakwan || 'Same with Hafs'
             }
           ]
         },
@@ -229,11 +229,11 @@ const Fields = () => {
           rowi: [
             {
               name: "شعبة",
-              qiraah: Shubah
+              qiraah: Shubah || 'Same with Hafs'
             },
             {
               name: "حفص",
-              qiraah: Hafs
+              qiraah: Hafs || 'Same with Hafs'
             }
           ]
         },
@@ -242,11 +242,11 @@ const Fields = () => {
           rowi: [
             {
               name: "السوسي",
-              qiraah: Susi
+              qiraah: Susi || 'Same with Hafs'
             },
             {
               name: "الدوري",
-              qiraah: DuriAbuAmr
+              qiraah: DuriAbuAmr || 'Same with Hafs'
             }
           ]
         },
@@ -255,11 +255,11 @@ const Fields = () => {
           rowi: [
             {
               name: "خلف",
-              qiraah: Khalaf
+              qiraah: Khalaf || 'Same with Hafs'
             },
             {
               name: "خلاد",
-              qiraah: Khallad
+              qiraah: Khallad || 'Same with Hafs'
             }
           ]
         },
@@ -268,11 +268,11 @@ const Fields = () => {
           rowi: [
             {
               name: "ورش",
-              qiraah: Warsh
+              qiraah: Warsh || 'Same with Hafs'
             },
             {
               name: "قالون",
-              qiraah: Qolun
+              qiraah: Qolun || 'Same with Hafs'
             }
           ]
         },
@@ -281,11 +281,11 @@ const Fields = () => {
           rowi: [
             {
               name: "ليث",
-              qiraah: Laith
+              qiraah: Laith || 'Same with Hafs'
             },
             {
               name: "الدوري",
-              qiraah: DuriKisai
+              qiraah: DuriKisai || 'Same with Hafs'
             }
           ]
         }
