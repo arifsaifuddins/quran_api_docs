@@ -8,19 +8,19 @@
     @apply text-white bg-green-300
   }
 
-  *::scrollbar {
+  *::-webkit-scrollbar {
     @apply w-2
   }
 
-  *::scrollbar-track {
+  *::-webkit-scrollbar-track {
     @apply bg-none
   }
 
-  *::scrollbar-thumb {
+  *::-webkit-scrollbar-thumb {
     @apply bg-slate-400
   }
 
-  *::scrollbar-thumb:hover {
+  *::-webkit-scrollbar-thumb:hover {
     @apply bg-green-500
   }
 

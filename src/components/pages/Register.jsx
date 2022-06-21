@@ -79,7 +79,7 @@ function Register() {
         <input required type="text" placeholder="Input an Username..." onChange={(e) => setName(e.target.value)} className="name mt-2 bg-transparent text-white py-2 pl-3 rounded-xl text-lg  border outline-none border-slate-400 w-[100%]" />
         <input required type="email" placeholder="Input an Email Address..." onChange={(e) => setEmail(e.target.value)} className="email mt-2 bg-transparent text-white py-2 pl-3 rounded-xl text-lg  border outline-none border-slate-400 w-[100%]" />
         <input required type="password" placeholder="Input your Password..." onChange={(e) => setPass(e.target.value)} className="pass mt-5 bg-transparent text-white py-2 pl-3 rounded-xl text-lg  border outline-none border-slate-400 w-[100%]" />
-        <input required type="password" placeholder="Konfirm your Password..." onChange={(e) => setConfPass(e.target.value)} className="confpass mt-2 bg-transparent text-white py-2 pl-3 rounded-xl text-lg  border outline-none border-slate-400 w-[100%]" />
+        <input required type="password" placeholder="Confirm your Password..." onChange={(e) => setConfPass(e.target.value)} className="confpass mt-2 bg-transparent text-white py-2 pl-3 rounded-xl text-lg  border outline-none border-slate-400 w-[100%]" />
         {
           (Commited == false) ? <button disabled className="cursor-not-allowed mt-12 py-2 pl-3 rounded-full text-lg bg-[#3c217c] font-bold w-[100%]" >Sign Up as User</button> : <p className="cursor-pointer text-center mt-12 bg-[#3700b3] text-white py-2 pl-3 rounded-full text-lg hover:bg-[#3c217c] font-bold w-[100%]" onClick={() => registUser()}>Sign Up as User</p>
         }
