@@ -86,7 +86,7 @@ function Home() {
         </div>
       </div>
 
-      <Link className="font-[arial] mt-10 mb-40 w-52 text-center mx-auto bg-green-500 hover:bg-green-700 font-semibold px-4 py-2 text-[#ebebeb] rounded-full" to="/login">Get Token <i className="ml-2 fas fa-up-right-from-square"></i></Link>
+      <Link className="font-[arial] mt-10 mb-40 w-52 text-center mx-auto bg-gradient-to-r from-green-500 to-yellow-500 hover:to-green-700 hover:from-orange-400 font-semibold px-4 py-2 text-[#ebebeb] rounded-full" to="/login">Get Token <i className="ml-2 fas fa-up-right-from-square"></i></Link>
 
       <hr />
 
