@@ -8,20 +8,24 @@
     @apply text-white bg-green-300
   }
 
+  *::-moz-scrollbar,
   *::-webkit-scrollbar {
-    @apply w-2
+    @apply w-1 rounded-lg
   }
 
+  *::-moz-scrollbar-track,
   *::-webkit-scrollbar-track {
     @apply bg-none
   }
 
+  *::-moz-scrollbar-thumb,
   *::-webkit-scrollbar-thumb {
-    @apply bg-slate-400
+    @apply w-1 rounded-lg
   }
 
+  *::-moz-scrollbar-thumb:hover,
   *::-webkit-scrollbar-thumb:hover {
-    @apply bg-green-500
+    @apply bg-none
   }
 
   input[type="number"],
