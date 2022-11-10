@@ -61,7 +61,7 @@ function Home() {
       <div className="flex md:h-96 h-[500px]">
         <div className="text-center m-auto">
           <h1 className="text-6xl lg:text-7xl font-bold mt-10 text-[#ebebeb]"><span className="text-green-500">A Simply</span> Quran <span className="text-red-500">API</span></h1>
-          <p className="sm:text-3xl md:text-4xl text-xl mt-6">"Login, Get Token, and Do Anything..."</p>
+          <p className="sm:text-3xl md:text-4xl text-xl mt-6"><i>"Login, Get Token, and Do Anything..."</i></p>
         </div>
       </div>
 
