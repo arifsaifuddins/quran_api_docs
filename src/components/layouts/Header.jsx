@@ -22,7 +22,7 @@ function Header() {
             <NavLink style={active} className="mx-3 hidden md:flex hover:underline" to="/quraa">Quraa</NavLink>
             <NavLink style={active} className="mx-3 hidden md:flex hover:underline" to="/about">About</NavLink>
             <Link className="ml-3 hidden md:flex bg-green-500 hover:bg-green-700 font-semibold px-4 text-[#ebebeb] rounded-lg" to="/login">Get Token</Link>
-            <a className="ml-3 text-xl text-[#ebebeb] md:hidden" target="_blank" href="https://github.com/saifuddien/quran_rewayah_gui"><i className="fab fa-github"></i></a>
+            <a className="ml-3 text-xl text-[#ebebeb] md:hidden" target="_blank" href="https://github.com/ariefsaifuddien"><i className="fab fa-github"></i></a>
           </div>
         </div>
       </div>
