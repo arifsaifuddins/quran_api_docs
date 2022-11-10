@@ -4,6 +4,10 @@
 
 @layer base {
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   *::selection {
     @apply text-white bg-green-300
   }
@@ -33,5 +37,10 @@
   input::-webkit-outer-spin-button {
     appearance: none;
     -moz-appearance: textfield;
+  }
+
+  body {
+    background-image: url('./images/bg.jpg');
+    background-attachment: fixed;
   }
 }
