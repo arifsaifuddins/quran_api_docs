@@ -91,7 +91,7 @@ function Home() {
       <div className="flex flex-col md:flex-row mb-10 justify-between py-24 my-8 sm:ml-0 sm:text-sm md:text-base">
         <div className="flex flex-col">
           <h1 className="text-6xl font-bold text-[#ebebeb]">Arief Saifuddien</h1>
-          <p className="my-6 text-2xl">
+          <p className="mt-6 mb-12 text-2xl">
             <a target="_blank" href="https://wa.me/+249121208279"><i className="fab text-green-500 fa-whatsapp mr-3"></i></a>
             <a target="_blank" href="https://facebook.com/ariefsaifuddien01"><i className="fab text-blue-700 fa-facebook mx-3"></i></a>
             <a target="_blank" href="https://twitter.com/ariefsaifuddien"><i className="fab text-blue-500 fa-twitter mx-3"></i></a>
