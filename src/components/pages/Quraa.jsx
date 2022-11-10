@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Title } from 'react-head';
 import quraa from '../quraa.json'
 
 function Quraa() {
@@ -54,6 +55,7 @@ function Quraa() {
   return (
     <div className="flex justify-between px-4 -mt-4 mx-auto w-[100%] lg:w-[1000px] flex-col md:flex-row font-[tajawal]">
       <div className="flex flex-col md:w-[75%] h-[100vh] overflow-y-scroll pt-14 pb-36 lg:pr-10 md:pr-5">
+        <Title>QuranMe API | Quraa</Title>
         <h1 className="font-semibold text-2xl mb-2 pb-3 border-b border-slate-400 text-white ">Quraa Sab'ah :</h1>
 
         <div className="flex flex-col">

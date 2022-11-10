@@ -1,8 +1,10 @@
+import { Title } from "react-head";
 import { Link } from "react-router-dom";
 
 function Docs() {
   return (
     <div className="flex justify-between px-4 -mt-4 mx-auto w-[100%] lg:w-[1000px] flex-col md:flex-row font-[tajawal]">
+      <Title>QuranMe API | Documentation</Title>
       <div className="flex flex-col md:w-[75%] h-[100vh] overflow-auto pt-14 pb-36 lg:pr-10 md:pr-5">
         <h1 className="font-semibold text-2xl mb-2 pb-3 border-b border-slate-400 text-white ">Documentation :</h1>
 
@@ -125,7 +127,7 @@ function Docs() {
             <span className="text-purple-500">bodyBytes</span>, <span className="text-purple-500">err</span> := ioutil.<span className="text-orange-500">ReadAll</span>(<span className="text-purple-500">res</span>.Body)<br />
             json.<span className="text-orange-500">Unmarshal</span>(<span className="text-purple-500">bodyBytes</span>, &amp;<span className="text-purple-500">data</span>)<br /><br />
 
-            if <span className="text-purple-500">err</span> != <span class="text-purple-500">nil</span> {'{'}<br />
+            if <span className="text-purple-500">err</span> != <span className="text-purple-500">nil</span> {'{'}<br />
             log.<span className="text-orange-500">Fatalln</span>(<span className="text-purple-500">err</span>)<br />
             {'}'}<br /><br />
 

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Title } from "react-head";
 import { Link, useNavigate } from "react-router-dom";
 
 function Register() {
@@ -70,6 +71,7 @@ function Register() {
 
   return (
     <div className="flex flex-col items-center mx-auto w-[100%] sm:w-[700px] mb-20 font-[tajawal]">
+      <Title>QuranMe API | Sign Up</Title>
       <h1 className="md:text-5xl text-4xl mt-10 mb-20 font-bold">Sign Up</h1>
       <form className="w-[100%] px-4 sm:px-20 font-[arial]">
         {

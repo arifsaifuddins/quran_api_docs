@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Title } from "react-head";
 import { Link } from "react-router-dom";
 
 function Login() {
@@ -89,6 +90,7 @@ function Login() {
 
   return (
     <div className="flex flex-col items-center mx-auto w-[100%] sm:w-[700px] mb-20 font-[tajawal]">
+      <Title>QuranMe API | Get Token</Title>
       <h1 className="md:text-5xl text-4xl mt-10 mb-20  font-bold">Get Token</h1>
       <div className="flex flex-col w-[100%] px-4 sm:px-20">
         {

@@ -103,7 +103,7 @@ function Home() {
           <p className="text-white text-lg" ><i className="mr-2 mt-2 fas fa-briefcase"></i> API Founder</p>
           <p className="text-white text-lg" ><i className="mr-2 fas fa-location-dot"></i> Jepara, Indonesia</p>
         </div>
-        <img src="https://avatars.githubusercontent.com/u/87503629?v=4" className="md:w-96 rounded-xl mt-32 md:rotate-6 md:hover:rotate-0 transition" alt="Arief Photo" />
+        <img src="https://avatars.githubusercontent.com/u/87503629?v=4" className="md:w-96 rounded-xl mt-28 md:rotate-6 md:hover:rotate-0 transition" alt="Arief Photo" />
       </div>
     </div>
   );

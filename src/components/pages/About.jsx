@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Title } from "react-head"
 
 function About() {
   const [Subject, setSubject] = useState('')
@@ -55,7 +56,7 @@ function About() {
 
   return (
     <div className="flex flex-col mx-auto w-[100%] lg:w-[1000px] mb-20 font-[tajawal]">
-
+      <Title>QuranMe API | About</Title>
       <div className="flex justify-between px-4 py-10 flex-col md:flex-row">
         <div className="flex flex-col w-[100%] mb-20 md:mb-0 md:w-[70%]">
           <h1 className="font-semibold text-2xl mb-2 pb-3 border-b border-slate-400 text-white">About API Rewayah :</h1>
