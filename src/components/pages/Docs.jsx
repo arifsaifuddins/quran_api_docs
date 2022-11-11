@@ -148,7 +148,7 @@ function Docs() {
 
             <span className="ml-5 ">defer</span> <span className="text-purple-500">res</span>.Body.<span className="text-orange-500">Close</span>()<br />
             <span className="ml-5 ">fmt</span>.<span className="text-orange-500">Println</span>(<span className="text-purple-500">data</span>)
-            {'}'}<br /><br />
+            <span>{'}'}</span><br /><br />
           </div>
         </code></pre>
 
