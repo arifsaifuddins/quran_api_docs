@@ -19,14 +19,15 @@ function Docs() {
           </div>
         </code></pre>
 
-        <h3 className="mb-3">You can do it with fetch <code className="text-orange-500">fetch</code>() method in javascript,</h3>
+        <h3 className="mb-3">You can do it with fetch <code className="text-orange-500">fetch</code>() or <code className="text-orange-500">axios</code>() method in javascript library <a href="https://www.npmjs.com/package/axios" className="text-green-500">axios</a>,</h3>
 
         <pre className="w-[100%] bg-slate-800 opacity-70 rounded-b-lg text-sm text-white"><code className="lang-javascript">
           <div className="flex items-end font-bold bg-[#444] border-b border-white">
-            <h1 className="p-2 px-4 text-md  font-sans bg-white text-slate-800">Javascript Fetch</h1>
+            <h1 className="p-2 px-4 text-md  font-sans bg-white text-slate-800">Javascript</h1>
           </div>
 
           <div className="overflow-auto p-2 m-2">
+            <span className="text-gray-500">// fetch()</span><br />
             <span className="hljs-selector-tag text-orange-500">fetch</span>(<span className="hljs-string text-green-300">'https://quranme-api.vercel.app/quran/&lt;endpoint&gt;'</span>, <span>{'{'}</span><br />
             <span className="ml-5 hljs-attribute text-purple-500">method</span>: <span className="hljs-string text-green-300">'GET'</span>,<br />
             <span className="ml-5 hljs-attribute text-purple-500">headers</span>: <span>{'{'}</span><br />
@@ -35,18 +36,13 @@ function Docs() {
             {'}'})<br />
             <span className="hljs-selector-class ml-5 text-yellow-500">.then</span>(<span className="text-purple-500">res</span> =&gt; <span className="text-purple-500">res</span>.<span className="text-yellow-500">json</span>())<br />
             <span className="hljs-selector-class ml-5 text-yellow-500">.then</span>(<span className="text-purple-500">result</span> =&gt; console.<span className="text-yellow-500">log</span>(<span className="text-purple-500">result</span>))
-          </div>
-        </code></pre>
-
-        <h3 className="my-3">or you can do it with axios <code className="text-orange-500">axios</code>() method in javascript library <a href="https://www.npmjs.com/package/axios" className="text-green-500">axios</a>,</h3>
-
-        <pre className="w-[100%] bg-slate-800 opacity-70 rounded-b-lg text-sm text-white"><code className="lang-javascript">
-          <div className="flex items-end font-bold bg-[#444] border-b border-white">
-            <h1 className="p-2 px-4 text-md  font-sans bg-white text-slate-800">Javascript Axios</h1>
-          </div>
-          <div className="overflow-auto p-2 m-2">
-            <span className="hljs-keyword text-purple-500">const</span> <span className="text-orange-500">axios</span> = <span className="hljs-built_in text-purple-500">require</span>(<span className="hljs-string text-green-500">'axios'</span>); // node js<br />
-            <span className="hljs-keyword text-purple-500">import</span> <span className="text-orange-500">axios</span> <span className="hljs-keyword text-purple-500">from</span> <span className="hljs-string text-green-500">'axios'</span>; // js framework
+            <br />
+            <br />
+            <br />
+            <br />
+            <span className="text-gray-500">// axios()</span><br />
+            <span className="hljs-keyword text-purple-500">const</span> <span className="text-orange-500">axios</span> = <span className="hljs-built_in text-purple-500">require</span>(<span className="hljs-string text-green-500">'axios'</span>); <span className="text-gray-500">// node js</span><br />
+            <span className="hljs-keyword text-purple-500">import</span> <span className="text-orange-500">axios</span> <span className="hljs-keyword text-purple-500">from</span> <span className="hljs-string text-green-500">'axios'</span>; <span className="text-gray-500">// js frameworks</span><br />
             <br />
             <br />
             <span className="text-orange-500">axios</span>({'{'} <br />
