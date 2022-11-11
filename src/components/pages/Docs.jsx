@@ -70,16 +70,16 @@ function Docs() {
             <span className="text-red-500">&lt;?php</span>
             <br /><br />
             <span className="text-gray-500">// curl()</span><br />
-            $<span className="text-purple-500">curl</span> = <span className="text-orange-500">curl_init</span>(<span className="text-green-300">'https://quranme-api.vercel.app/quran/&lt;endpoint&gt;'</span>);<br />
+            $<span className="text-purple-500">curl</span> = <span className="text-orange-500">curl_init</span>(<span className="text-green-300">'https://quranme-api.vercel.app/quran/&lt;endpoint&gt;'</span>);<br /><br />
             <span className="text-orange-500">curl_setopt</span>($<span className="text-purple-500">curl</span>, CURLOPT_SSL_VERIFYPEER, <span className="text-purple-500">false</span>);<br />
             <span className="text-orange-500">curl_setopt</span>($<span className="text-purple-500">curl</span>, CURLOPT_RETURNTRANSFER, <span className="text-purple-500">true</span>);<br />
-            <span className="text-orange-500">curl_setopt</span>($<span className="text-purple-500">curl</span>, CURLOPT_HEADER, <span className="text-purple-500">true</span>);<br />
             <span className="text-orange-500">curl_setopt</span>($<span className="text-purple-500">curl</span>, CURLOPT_HTTPHEADER, [<br />
             <span className="text-green-300 ml-5">'auth-token: &lt;your token&gt;'</span><br />
             ]);<br /><br />
             $<span className="text-purple-500">res</span> = <span className="text-orange-500">curl_exec</span>($<span className="text-purple-500">curl</span>);<br />
-            <span className="text-orange-500">curl_close</span>($<span className="text-purple-500">curl</span>);<br />
+            <span className="text-orange-500">curl_close</span>($<span className="text-purple-500">curl</span>);<br /><br />
             <span className="hljs-keyword">echo</span> $<span className="text-purple-500">res</span> . PHP_EOL;
+            <span className="text-orange-500">var_dump</span>(<span className="text-orange-500">json_decode</span>($<span className="text-purple-500">json</span>, <span className="text-purple-500">true</span>));
             <br /><br />
             <br /><br />
             <span className="text-gray-500">// file_get_contents()</span><br />
