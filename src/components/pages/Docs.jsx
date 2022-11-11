@@ -78,8 +78,8 @@ function Docs() {
             ]);<br /><br />
             $<span className="text-purple-500">res</span> = <span className="text-orange-500">curl_exec</span>($<span className="text-purple-500">curl</span>);<br />
             <span className="text-orange-500">curl_close</span>($<span className="text-purple-500">curl</span>);<br /><br />
-            <span className="hljs-keyword">echo</span> $<span className="text-purple-500">res</span> . PHP_EOL;
-            <span className="text-orange-500">var_dump</span>(<span className="text-orange-500">json_decode</span>($<span className="text-purple-500">json</span>, <span className="text-purple-500">true</span>));
+            <span className="hljs-keyword">echo</span> $<span className="text-purple-500">res</span> . PHP_EOL;<br />
+            <span className="text-orange-500">var_dump</span>(<span className="text-orange-500">json_decode</span>($<span className="text-purple-500">res</span>, <span className="text-purple-500">true</span>));
             <br /><br />
             <br /><br />
             <span className="text-gray-500">// file_get_contents()</span><br />
