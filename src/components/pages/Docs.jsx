@@ -67,9 +67,9 @@ function Docs() {
             <h1 className="p-2 px-4 text-md  font-sans bg-white text-slate-800">PHP</h1>
           </div>
           <div className="overflow-auto p-2 m-2">
-            <span className="text-gray-500">&lt;?php</span>
+            <span className="text-red-500">&lt;?php</span>
             <br /><br />
-            <span>// curl()</span><br />
+            <span className="text-gray-500">// curl()</span><br />
             $<span className="text-purple-500">curl</span> = <span className="text-orange-500">curl_init</span>(<span className="text-green-300">'https://quranme-api.vercel.app/quran/&lt;endpoint&gt;'</span>);<br />
             <span className="text-orange-500">curl_setopt</span>($<span className="text-purple-500">curl</span>, CURLOPT_SSL_VERIFYPEER, <span className="text-purple-500">false</span>);<br />
             <span className="text-orange-500">curl_setopt</span>($<span className="text-purple-500">curl</span>, CURLOPT_RETURNTRANSFER, <span className="text-purple-500">true</span>);<br />
@@ -81,7 +81,8 @@ function Docs() {
             <span className="text-orange-500">curl_close</span>($<span className="text-purple-500">curl</span>);<br />
             <span className="hljs-keyword">echo</span> $<span className="text-purple-500">res</span> . PHP_EOL;
             <br /><br />
-            <span>// file_get_contents()</span><br />
+            <br /><br />
+            <span className="text-gray-500">// file_get_contents()</span><br />
             $<span className="text-purple-500">context</span> = <span className="text-orange-500">stream_context_create</span>([<br />
             <span className="ml-5 text-green-300">'http'</span> ={'>'} [<br />
             <span className="ml-10 text-green-300">'method'</span> ={'>'} <span className="text-green-300">'GET'</span><br />
