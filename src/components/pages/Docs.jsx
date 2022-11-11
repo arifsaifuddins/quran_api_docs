@@ -143,12 +143,12 @@ function Docs() {
             <span className="ml-5 ">json</span>.<span className="text-orange-500">Unmarshal</span>(<span className="text-purple-500">bodyBytes</span>, &amp;<span className="text-purple-500">data</span>)<br /><br />
 
             <span className="ml-5 ">if</span> <span className="text-purple-500">err</span> != <span className="text-purple-500">nil</span> {'{'}<br />
-            <span className="ml-5 ">log</span>.<span className="text-orange-500">Fatalln</span>(<span className="text-purple-500">err</span>)<br />
-            {'}'}<br /><br />
+            <span className="ml-10 ">log</span>.<span className="text-orange-500">Fatalln</span>(<span className="text-purple-500">err</span>)<br />
+            <span className="ml-5">{'}'}</span><br /><br />
 
             <span className="ml-5 ">defer</span> <span className="text-purple-500">res</span>.Body.<span className="text-orange-500">Close</span>()<br />
             <span className="ml-5 ">fmt</span>.<span className="text-orange-500">Println</span>(<span className="text-purple-500">data</span>)
-            {'}'}
+            {'}'}<br /><br />
           </div>
         </code></pre>
 
