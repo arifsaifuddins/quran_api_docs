@@ -128,9 +128,6 @@ export const Ayah = () => {
       <span className="text-orange-500 ml-20">"page"</span>: <span className="text-purple-500">235</span>,<br />
       <span className="text-orange-500 ml-20">"audio"</span>: <span className="text-green-300">"https://cdn.islamic.network/quran/audio/128/ar.alafasy/1597.mp3"</span>,<br />
       <span className="text-orange-500 ml-20">"__v"</span>: <span className="text-purple-500">0</span><br />
-      <span className="ml-14">{'}'}</span>,<br />
-      <span className="ml-14">{'{'}</span><br />
-      <span className="text-orange-500 ml-20">"..."</span>: <span className="text-green-300">"..."</span><br />
       <span className="ml-14">{'}'}</span><br />
       <span className="ml-10">]</span><br />
       <span className="ml-5">{'}'}</span><br />
