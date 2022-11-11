@@ -131,21 +131,24 @@ function Docs() {
             <span className="text-green-300 ml-5">"net/http"</span><br />
             ) <br /><br />
 
-            <span className="text-purple-500">req</span>, <span className="text-purple-500">err</span> := <span className="text-purple-500">http</span>.NewRequest(<span className="hljs-string">"<span className="text-green-300">GET</span>"</span>, <span className="text-green-300">"https://quranme-api.vercel.app/quran/&lt;endpoint&gt;"</span>, <span className="text-purple-500">nil</span>) <br />
-            <span className="text-purple-500">req</span>.Header.<span className="text-orange-500">Set</span>(<span className="text-green-300">"auth-token"</span>, <span className="text-green-300">"&lt;your token&gt;"</span>)<br /><br />
+            <span className="text-purple-500">func</span> <span className="text-orange-500">main</span>() {'{'}<br />
+            <span className="ml-5 text-gray-500">var</span> <span className="text-purple-500">data</span> <span className="text-gray-500">map</span>[<span className="text-orange-500">string</span>]<span className="text-green-300">any</span><br /><br />
+            <span className="ml-5 text-purple-500">req</span>, <span className="text-purple-500">err</span> := <span className="text-purple-500">http</span>.NewRequest(<span className="hljs-string">"<span className="text-green-300">GET</span>"</span>, <span className="text-green-300">"https://quranme-api.vercel.app/quran/&lt;endpoint&gt;"</span>, <span className="text-purple-500">nil</span>) <br />
+            <span className="ml-5 text-purple-500">req</span>.Header.<span className="text-orange-500">Set</span>(<span className="text-green-300">"auth-token"</span>, <span className="text-green-300">"&lt;your token&gt;"</span>)<br /><br />
 
-            <span className="text-purple-500">client</span> := &amp;<span className="text-purple-500">http</span>.<span className="text-orange-500">Client</span>{'{}'} <br />
-            <span className="text-purple-500">res</span>, <span className="text-purple-500">err</span> := <span className="text-purple-500">client</span>.Do(<span className="text-purple-500">req</span>)<br /><br />
+            <span className="ml-5 text-purple-500">client</span> := &amp;<span className="text-purple-500">http</span>.<span className="text-orange-500">Client</span>{'{}'} <br />
+            <span className="ml-5 text-purple-500">res</span>, <span className="text-purple-500">err</span> := <span className="text-purple-500">client</span>.Do(<span className="text-purple-500">req</span>)<br /><br />
 
-            defer <span className="text-purple-500">res</span>.Body.<span className="text-orange-500">err</span>()<br />
-            <span className="text-purple-500">bodyBytes</span>, <span className="text-purple-500">err</span> := ioutil.<span className="text-orange-500">ReadAll</span>(<span className="text-purple-500">res</span>.Body)<br />
-            json.<span className="text-orange-500">Unmarshal</span>(<span className="text-purple-500">bodyBytes</span>, &amp;<span className="text-purple-500">data</span>)<br /><br />
+            <span className="ml-5 text-purple-500">bodyBytes</span>, <span className="text-purple-500">err</span> := ioutil.<span className="text-orange-500">ReadAll</span>(<span className="text-purple-500">res</span>.Body)<br />
+            <span className="ml-5 ">json</span>.<span className="text-orange-500">Unmarshal</span>(<span className="text-purple-500">bodyBytes</span>, &amp;<span className="text-purple-500">data</span>)<br /><br />
 
-            if <span className="text-purple-500">err</span> != <span className="text-purple-500">nil</span> {'{'}<br />
-            log.<span className="text-orange-500">Fatalln</span>(<span className="text-purple-500">err</span>)<br />
+            <span className="ml-5 ">if</span> <span className="text-purple-500">err</span> != <span className="text-purple-500">nil</span> {'{'}<br />
+            <span className="ml-5 ">log</span>.<span className="text-orange-500">Fatalln</span>(<span className="text-purple-500">err</span>)<br />
             {'}'}<br /><br />
 
-            fmt.<span className="text-orange-500">Println</span>(<span className="text-purple-500">data</span>)
+            <span className="ml-5 ">defer</span> <span className="text-purple-500">res</span>.Body.<span className="text-orange-500">Close</span>()<br />
+            <span className="ml-5 ">fmt</span>.<span className="text-orange-500">Println</span>(<span className="text-purple-500">data</span>)
+            {'}'}
           </div>
         </code></pre>
 
