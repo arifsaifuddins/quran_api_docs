@@ -1,6 +1,6 @@
 export const Juz = () => {
   return (
-    <div className="overflow-scroll h-[80vh] p-5">
+    <div className="overflow-scroll p-5">
       <span >{'{'}</span><br />
       <span className="text-orange-500 ml-5">"code"</span>: <span className="text-purple-500">200</span>, <br />
       <span className="text-orange-500 ml-5">"message"</span>: <span className="text-green-300">"Getting For 1st Juz of Quran Successfully"</span>,<br />
@@ -39,7 +39,7 @@ export const Juz = () => {
 
 export const Surah = () => {
   return (
-    <div className="overflow-scroll h-[80vh] p-5">
+    <div className="overflow-scroll p-5">
       <span>{'{'}</span><br />
       <span className="text-orange-500 ml-5">"code"</span>: <span className="text-purple-500">200</span>,<br />
       <span className="text-orange-500 ml-5">"message"</span>: <span className="text-green-300">"Getting For Yusuf Surah Successfully"</span>,<br />
@@ -103,7 +103,7 @@ export const Surah = () => {
 
 export const Ayah = () => {
   return (
-    <div className="overflow-scroll h-[80vh] p-5">
+    <div className="overflow-scroll p-5">
       <span>{'{'}</span><br />
       <span className="text-orange-500 ml-5">"code"</span>: <span className="text-purple-500">200</span>,<br />
       <span className="text-orange-500 ml-5">"message"</span>: <span className="text-green-300">"Getting For 1st of Yusuf Surah Successfully"</span>,<br />
