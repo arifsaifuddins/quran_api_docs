@@ -59,7 +59,7 @@ function About() {
       <Title>QuranMe API | About</Title>
       <div className="flex justify-between px-4 py-10 flex-col md:flex-row">
         <div className="flex flex-col w-[100%] mb-20 md:mb-0 md:w-[70%]">
-          <h1 className="font-semibold text-2xl mb-2 pb-3 border-b border-slate-400 text-white">About API Rewayah :</h1>
+          <h1 className="font-semibold text-2xl mb-2 pb-3 border-b border-slate-400 text-white">About API :</h1>
           <p className="mt-4 font-bold text-[#ebebeb] lg:text-lg">Hello Everybody!...</p>
           <p className="mt-6 lg:text-lg first-letter:ml-7">This is an API for <span className="text-green-500">Simple and easier for Quran Kareem</span>, this made couse i haven't see someone create an API like this, then i am starting to think if i can make it as API for anyone can get it easly. I am named it <span className="text-red-500 font-bold italic">"QuranMe API"</span>, couse the API provide all of quran rightly and simply not be many data. This API built with NodeJS on ExpressJS framework to make it faster and simple, and for database i was used MongoDB for it.</p>
           <p className="mt-6 lg:text-lg first-letter:ml-7">So first of all, i am <a className="text-green-500" href="https://github.com/ariefsaifuddien">Arief Saifuddien</a> from Jepara, Indonesia. I am a Student for <span className="font-bold text-[#ebebeb] italic">Islamic Studies (Dakwah and Sirah)</span> at International University of Africa in Khartoum, Sudan <a href="https://iua.edu.sd" className="text-green-500 ">(IUA)</a>, and my hobby is code the news on my life.</p>
